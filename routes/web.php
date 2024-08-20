@@ -33,4 +33,12 @@ Route::get('/register', function () {
     return view('pages.register');
 })->name('register');
 
+Route::get('/testimonials', function () {
+    return view('pages.testimonials');
+})->name('testimonials');
+
+Route::get('/faq', function () {
+    return view('pages.faq');
+})->name('faq');
+
 // Route::get('about', 'PagesController@about');

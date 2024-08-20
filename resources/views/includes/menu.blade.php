@@ -44,14 +44,14 @@
                             <li class="menu-item-has-children"><a href="#">CWW Mindset</a>
                                 <ul class="sub-menu">
                                     <li><a href="/about">About us</a></li>
-                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="/faq">FAQ</a></li>
                                     <li><a href="#">Calendar Events</a></li>
                                     <li><a href="#">Submit Calendar Event</a></li>						
                                 </ul>
                             </li>
                             <li class="menu-item-has-children"><a href="#">Why CWW?</a>
                                 <ul class="sub-menu">
-                                    <li><a href="#">Testimonials</a></li>
+                                    <li><a href="/testimonials">Testimonials</a></li>
                                     <li><a href="#">Benefits</a></li>					
                                 </ul>
                             </li>
