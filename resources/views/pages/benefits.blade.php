@@ -87,7 +87,7 @@
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-3 mb-30">
-					<img class="w-100" src="public/assets/img/banner/magazine.jpg">
+					<img class="w-100" src="public/assets/img/banner/magazine.png">
 				</div>
 				<div class="col-lg-4 col-md-3 mb-30">
 					<div class="services__one-item">
