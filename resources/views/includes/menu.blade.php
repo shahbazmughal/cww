@@ -52,7 +52,7 @@
                             <li class="menu-item-has-children"><a href="#">Why CWW?</a>
                                 <ul class="sub-menu">
                                     <li><a href="/testimonials">Testimonials</a></li>
-                                    <li><a href="#">Benefits</a></li>					
+                                    <li><a href="/benefits">Benefits</a></li>					
                                 </ul>
                             </li>
                             <li class="menu-item-has-children">
@@ -73,7 +73,7 @@
 											<li><a href="#">Submit A Community Post</a></li>
 										</ul>
 									</li>
-                                    <li><a href="#">CWW Chronicles</a></li>
+                                    <li><a href="/blog_posts">CWW Chronicles</a></li>
                                     <li><a href="#">Media Room</a></li>
                                 </ul>
                             </li>

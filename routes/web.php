@@ -41,4 +41,20 @@ Route::get('/faq', function () {
     return view('pages.faq');
 })->name('faq');
 
+Route::get('/benefits', function () {
+    return view('pages.benefits');
+})->name('benefits');
+
+Route::get('/blog_posts', function () {
+    return view('blogs.blog_posts');
+})->name('blog_posts');
+
+Route::get('/business_blog', function () {
+    return view('blogs.business_blog');
+})->name('business_blog');
+
+Route::get('/professional_blog', function () {
+    return view('blogs.professional_blog');
+})->name('professional_blog');
+
 // Route::get('about', 'PagesController@about');

@@ -10,7 +10,7 @@
 					<div class="page__banner-content">
                         <span>faq</span>
 						<ul>
-							<li><a href="index-2.html">Home</a><span>|</span></li>
+							<li><a href="/">Home</a><span>|</span></li>
 							<li>FAQ's</li>
 						</ul>
 						<h1>Question & Ans.</h1>

@@ -16,7 +16,7 @@
 					<div class="page__banner-content">
                         <span>Testimonials</span>
 						<ul>
-							<li><a href="index-2.html">Home</a><span>|</span></li>
+							<li><a href="/">Home</a><span>|</span></li>
 							<li>Testimonials</li>
 						</ul>
 						<h1>Testimonials</h1>
@@ -30,7 +30,7 @@
     <div class="testimonial__two section-padding">
         <div class="container">
             <div class="row">
-			<div class="col-xl-12 mb-30">
+			    <div class="col-xl-12 mb-30">
                     <div class="project__details-area">
                         <h2 class="mb-30">Our Member Reviews</h2>
                         <p class="mb-25">At Continental Who’s Who, we pride ourselves on being more than a network; we are a hub of excellence and integrity. Our members' testimonials speak volumes, illustrating how our extensive network, valuable benefits, and innovative marketing tools have significantly enhanced their professional journeys. These stories highlight the transformative power of our community, showcasing our commitment to fostering growth and success. Here, members share their experiences, celebrating the unique advantages of being part of our distinguished and forward-thinking group. Join us in exploring these inspiring narratives that exemplify the essence of professional collaboration and excellence.</p>
