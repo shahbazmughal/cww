@@ -2,7 +2,7 @@
     
     <style>
         .page__banner-content > span {
-            font-size: 90px;
+            font-size: 80px;
         }
     </style>
 

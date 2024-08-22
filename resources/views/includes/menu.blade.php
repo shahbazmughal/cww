@@ -45,8 +45,8 @@
                                 <ul class="sub-menu">
                                     <li><a href="/about">About us</a></li>
                                     <li><a href="/faq">FAQ</a></li>
-                                    <li><a href="#">Calendar Events</a></li>
-                                    <li><a href="#">Submit Calendar Event</a></li>						
+                                    <li><a href="/calendar_events">Calendar Events</a></li>
+                                    <li><a href="/submit_events">Submit Calendar Event</a></li>						
                                 </ul>
                             </li>
                             <li class="menu-item-has-children"><a href="#">Why CWW?</a>

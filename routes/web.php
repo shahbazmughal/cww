@@ -57,4 +57,12 @@ Route::get('/professional_blog', function () {
     return view('blogs.professional_blog');
 })->name('professional_blog');
 
+Route::get('/calendar_events', function () {
+    return view('pages.calendar_events');
+})->name('calendar_events');
+
+Route::get('/submit_events', function () {
+    return view('pages.submit_events');
+})->name('submit_events');
+
 // Route::get('about', 'PagesController@about');
