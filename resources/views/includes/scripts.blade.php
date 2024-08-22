@@ -26,16 +26,16 @@
 
 	<script>
 		$(document).ready(function() {
-			$("#register-form").submit(function() {
-				$(".theme-loader").show();
-				setTimeout(() => {
-					$(".theme-loader").hide();
-					$("#register-form").hide();
-					$("#register-success").css("display", "flex");
-					return false;
-				}, 1000);
-				return false;
-			});
+			// $("#register-form").submit(function() {
+			// 	$(".theme-loader").show();
+			// 	setTimeout(() => {
+			// 		$(".theme-loader").hide();
+			// 		$("#register-form").hide();
+			// 		$("#register-success").css("display", "flex");
+			// 		return false;
+			// 	}, 1000);
+			// 	return false;
+			// });
 		});
 	</script>
 </body>

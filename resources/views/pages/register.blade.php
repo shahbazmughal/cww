@@ -25,7 +25,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
-                    <form action="#" method="post" id="register-form">
+                    <form action="/register" method="post" id="register-form">
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <div class="row">
                             <div class="col-md-12">
                                 <h3 class="mb-3">Register Now</h3>
@@ -173,13 +174,13 @@
                             <div class="col-md-6 mb-30">
 								<div class="request__quote-item">
 									<label>Business Phone</label>
-									<input type="text" name="business-phonr" placeholder="Business Phone">
+									<input type="text" name="businessphone" placeholder="Business Phone">
 								</div>
 							</div>
                             <div class="col-md-6 mb-30">
 								<div class="request__quote-item">
 									<label>Mobile Phone (Not for Public)</label>
-									<input type="text" name="mobile-no" placeholder="Mobile Phone (Not for Public)">
+									<input type="text" name="mobileno" placeholder="Mobile Phone (Not for Public)">
 								</div>
 							</div>
                             <div class="col-lg-12">

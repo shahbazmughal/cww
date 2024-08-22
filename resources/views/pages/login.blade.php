@@ -12,7 +12,8 @@
                         <h3 class="text-center mb-0">Please sign in</h3>
                         <p class="mb-30 text-center">Access your Continental Who’s Who member account</p>
                         <div class="getIn__touch-three-right-form">
-                            <form action="#">	
+                            <form action="{{ url('/login') }}" method="POST">	
+                            <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                 <div class="mt-25">
                                     <input type="text" name="email" placeholder="Email Address" required="required">
                                 </div>

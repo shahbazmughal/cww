@@ -9,9 +9,16 @@
 				</div>
 				<div class="col-xl-7 col-md-6">
 					<div class="top__bar-right">
-						<a href="/login"><i class="fas fa-lock"></i>Login</a>
+					@if (Session::has('user_email'))
+						<span class="text-white">Welcome {{ Auth::user()->firstname }}  {{ Auth::user()->lastname }}</span>
+						<span class="spacer"></span>
+						<a href="{{ url('/logout') }}"><i class="fas fa-lock"></i>Logout</a>
+					@else
+						<a href="{{ url('/login') }}"><i class="fas fa-lock"></i>Login</a>
 						<span class="spacer"></span>
 						<a href="/register"><i class="fas fa-user"></i>Register</a>
+					@endif
+						
 						<div class="top__bar-right-social">
 							<ul>
 								<li><a href="https://www.facebook.com/pstie"><i class="fab fa-facebook-f"></i></a></li>
