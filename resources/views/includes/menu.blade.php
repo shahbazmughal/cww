@@ -65,7 +65,7 @@
                             <li class="menu-item-has-children">
                                 <a href="#">Connect</a>
                                 <ul class="sub-menu">
-                                    <li><a href="#">Find Members</a></li>
+                                    <li><a href="/member_search">Find Members</a></li>
 									<li class="menu-item-has-children">
                                         <a href="#">Job Post Submission</a>
 										<ul class="sub-menu">

@@ -76,4 +76,14 @@ Route::get('/login', [AuthController::class, 'login_page'])->name('login');;
 //     // }
 //     return view('pages.login');
 // })
+
+
+Route::get('/member_search', function () {
+    return view('pages.member_search');
+})->name('member_search');
+
+Route::get('/member_profile', function () {
+    return view('pages.member_profile');
+})->name('member_profile');
+
 // Route::get('about', 'PagesController@about');
