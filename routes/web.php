@@ -86,4 +86,12 @@ Route::get('/member_profile', function () {
     return view('pages.member_profile');
 })->name('member_profile');
 
+Route::get('/submit_job', function () {
+    return view('pages.submit_job');
+})->name('submit_job');
+
+Route::get('/submit_community', function () {
+    return view('pages.submit_community');
+})->name('submit_community');
+
 // Route::get('about', 'PagesController@about');
