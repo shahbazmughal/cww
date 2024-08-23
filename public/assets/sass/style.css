@@ -12208,10 +12208,40 @@ select.form-control {
 }
 
 
-
-@media (max-width:600px)  {
+.header__area a img.mobile-show {
+  display: none;
+}
+@media (max-width:520px)  {
   .switch__tab {
       display: none;
+  }
+  .top__bar-left {
+    display: none;
+  }
+  .top__bar-right {
+      font-size: 12px;
+      line-height: 1.5;
+  }
+  .top__bar-right span.spacer {
+    padding-left: 10px;
+    margin-left: 10px;
+  }
+  .header__area a img {
+      max-width: 100%;
+      height: 60px;
+      padding: 10px 0;
+      display:none;
+  }
+  .header__area a img.mobile-show {
+    display: block;
+  }
+  .header__area-menubar-right .mean-container a.meanmenu-reveal {
+    top: 20px ;
+  }
+  .mean-container a.meanmenu-reveal span {
+      margin-top: 5px;
+      height: 2px;
+      width: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
