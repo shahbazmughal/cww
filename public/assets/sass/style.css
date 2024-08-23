@@ -12207,4 +12207,11 @@ select.form-control {
   100% { opacity: 1; }
 }
 
+
+
+@media (max-width:600px)  {
+  .switch__tab {
+      display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */

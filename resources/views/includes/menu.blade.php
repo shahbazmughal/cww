@@ -86,7 +86,7 @@
                             </li>
                             <li class="menu-item-has-children"><a href="#">Helpful Links</a>
                                 <ul class="sub-menu">
-                                    <li><a href="#">Events</a></li>
+                                    <li><a href="/calendar_events">Events</a></li>
                                     <li><a href="#">Privacy Policy</a></li>
                                     <li><a href="#">Terms of Services</a></li>
                                     <li><a href="#">Site Map</a></li>						
