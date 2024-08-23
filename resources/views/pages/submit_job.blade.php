@@ -1,7 +1,15 @@
 @include('includes.header')
 	<style>
-
+  		.page__banner-content > span {
+            font-size: 100px;
+        }
 		.ck-editor__editable[role="textbox"] {min-height: 300px;}
+		input#job_post_image {
+			height: 3.5rem;
+			line-height: 2.6rem;
+			font-size: 15px;
+			color: var(--body-color);
+		}
 		input#job_post_image:focus {
 			color: var(--text-heading-color);
 			outline: none;
@@ -17,12 +25,12 @@
 			<div class="row">
 				<div class="col-xl-12">
 					<div class="page__banner-content">
-                        <span></span>
+                        <span>Submit Job</span>
 						<ul>
 							<li><a href="/">Home</a><span>|</span></li>
-							<li></li>
+							<li>Submit Job</li>
 						</ul>
-						<h1></h1>
+						<h1>Submit Job</h1>
 					</div>
 				</div>
 			</div>
