@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\AuthController;
-use Session;
+//use Session;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,12 +27,7 @@ Route::get('/contact', function () {
     return view('pages.contact');
 })->name('contact');
 
-Route::get('/login', function () {
-    if (Session::has('user_email')){
-        return redirect('/'); 
-    }
-    return view('pages.login');
-})->name('login');
+
 
 Route::get('/register', function () {
     return view('pages.register');
@@ -74,4 +69,11 @@ Route::get('/submit_events', function () {
 Route::post('/register', [RegistrationController::class, 'register'])->name('register');
 Route::post('/login', [AuthController::class, 'login']);
 Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
+Route::get('/login', [AuthController::class, 'login_page'])->name('login');;
+// Route::get('/login', function () {
+//     // if (Session::has('user_email')){
+//     //     return redirect('/'); 
+//     // }
+//     return view('pages.login');
+// })
 // Route::get('about', 'PagesController@about');

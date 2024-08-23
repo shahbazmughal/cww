@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use App\Models\User;
+use Session;
 
 class AuthController extends Controller
 {
@@ -37,7 +38,12 @@ class AuthController extends Controller
             'email' => 'The provided credentials do not match our records.',
         ]);
     }
-
+    public function login_page(){
+         if (Session::has('user_email')){
+        return redirect('/'); 
+        }
+        return view('pages.login');
+    }
     // Handle logout request
     public function logout(Request $request)
     {
