@@ -56,10 +56,6 @@
 			.calendar .event-container .event {
 				padding: 8px 12px;
 			}
-			.calendar td {
-				padding: 10px 5px;
-				height: 50px;
-			}
 			.calendar .event-container .close {
 				z-index: 2;
 				width: 20px;
