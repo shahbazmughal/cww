@@ -1070,3 +1070,4 @@
 	@include('includes.footer')
 	
 	@include('includes.scripts')
+	@include('includes.html')
