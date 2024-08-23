@@ -71,14 +71,14 @@
                                         <a href="#">Job Post Submission</a>
 										<ul class="sub-menu">
 											<li><a href="#">See Current Job Posts</a></li>
-											<li><a href="#">Submit A Job Post</a></li>
+											<li><a href="/submit_job">Submit A Job Post</a></li>
 										</ul>
 									</li>
 									<li class="menu-item-has-children">
                                         <a href="#">Community Post Submission</a>
 										<ul class="sub-menu">
 											<li><a href="#">See Community Posts</a></li>
-											<li><a href="#">Submit A Community Post</a></li>
+											<li><a href="/submit_community">Submit A Community Post</a></li>
 										</ul>
 									</li>
                                     <li><a href="/blog_posts">CWW Chronicles</a></li>
