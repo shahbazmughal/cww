@@ -1,5 +1,8 @@
 @include('includes.header')
 	<style>
+		.page__banner-content > span {
+            font-size: 70px;
+        }
 		.team__area-item-content {
 			text-align: left !important;
 			margin: -60px 10px 0 !important;
@@ -36,8 +39,8 @@
 	</style>
 	@include('includes.menu')
 	
-		<!-- Page Banner Area Start -->
-		<div class="page__banner" data-background="public/assets/img/pages/page-banner.jpg">
+	<!-- Page Banner Area Start -->
+	<div class="page__banner" data-background="public/assets/img/pages/page-banner.jpg">
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-12">
@@ -57,7 +60,7 @@
 
 
 	<!-- Member Search Start -->
-	<div class="calender__events section-padding">
+	<div class="member__search section-padding">
         <div class="container">
 			<div class="row">
 				<div class="col-xl-3 col-lg-4 col-md-6 mb-30">
@@ -66,7 +69,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Muhammad Azam Razzak</a></h4>
+							<h4><a href="member_profile">Muhammad Azam Razzak</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Dubai - UAE
@@ -81,7 +84,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Zacharias Sundstrom</a></h4>
+							<h4><a href="member_profile">Zacharias Sundstrom</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Helsinki - Finland
@@ -96,7 +99,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Maria Iskra</a></h4>
+							<h4><a href="member_profile">Maria Iskra</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i>  Poznan - NY
@@ -111,7 +114,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Dr. Sven Grutzmeier</a></h4>
+							<h4><a href="member_profile">Dr. Sven Grutzmeier</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Stockholm - Sweden
@@ -126,7 +129,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Jacob Rix</a></h4>
+							<h4><a href="member_profile">Jacob Rix</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Copenhagen - NY
@@ -141,7 +144,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Ole Jakobson</a></h4>
+							<h4><a href="member_profile">Ole Jakobson</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Vedbaek - NY
@@ -156,7 +159,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">S¯ren Br¯gger Christensen</a></h4>
+							<h4><a href="member_profile">S¯ren Br¯gger Christensen</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Niva - NY
@@ -171,7 +174,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Susanne Borcher Stormer</a></h4>
+							<h4><a href="member_profile">Susanne Borcher Stormer</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Bagsvaerd - NY
@@ -186,7 +189,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Bernt M. Christensen</a></h4>
+							<h4><a href="member_profile">Bernt M. Christensen</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Helsinge - NY
@@ -201,7 +204,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Achim Deboeser</a></h4>
+							<h4><a href="member_profile">Achim Deboeser</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Schondorf am Ammersee - Bavaria
@@ -216,7 +219,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Oliver Von Schweinitz</a></h4>
+							<h4><a href="member_profile">Oliver Von Schweinitz</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Hamburg - Germany
@@ -231,7 +234,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Philo K. Holland, III</a></h4>
+							<h4><a href="member_profile">Philo K. Holland, III</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Wuerzburg - Bavaria
@@ -246,7 +249,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Ubaldo Caracino</a></h4>
+							<h4><a href="member_profile">Ubaldo Caracino</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Milan - Italy
@@ -261,7 +264,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Thomas R. Barth</a></h4>
+							<h4><a href="member_profile">Thomas R. Barth</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Herrliberg - Switzerland
@@ -276,7 +279,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Natalie Kouzeleas</a></h4>
+							<h4><a href="member_profile">Natalie Kouzeleas</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Marano Ticino - NO
@@ -291,7 +294,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Servaas Dankers</a></h4>
+							<h4><a href="member_profile">Servaas Dankers</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Tilburg - Netherlands
@@ -306,7 +309,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Sallian Wildeman-Cox</a></h4>
+							<h4><a href="member_profile">Sallian Wildeman-Cox</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Dordrecht - the Netherlands
@@ -321,7 +324,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Natalie Pothier</a></h4>
+							<h4><a href="member_profile">Natalie Pothier</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Brussels - NY
@@ -336,7 +339,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Thomas de Schaepdrijver</a></h4>
+							<h4><a href="member_profile">Thomas de Schaepdrijver</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Aalst Oost- Vlaanderen - Belgium
@@ -351,7 +354,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Ann Biebuyck</a></h4>
+							<h4><a href="member_profile">Ann Biebuyck</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Deinze - Belgium
@@ -366,7 +369,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Louis Levy-Garboua</a></h4>
+							<h4><a href="member_profile">Louis Levy-Garboua</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Paris - France
@@ -381,7 +384,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Sophie Uettwiler</a></h4>
+							<h4><a href="member_profile">Sophie Uettwiler</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Paris - France
@@ -396,7 +399,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Sabine Chen</a></h4>
+							<h4><a href="member_profile">Sabine Chen</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Paris - France
@@ -411,7 +414,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Stefan Lavau</a></h4>
+							<h4><a href="member_profile">Stefan Lavau</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Paris - France
@@ -426,7 +429,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Joelle Gauthier</a></h4>
+							<h4><a href="member_profile">Joelle Gauthier</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Nozay - France
@@ -441,7 +444,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Keveisha Robinson Clark</a></h4>
+							<h4><a href="member_profile">Keveisha Robinson Clark</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Roxbury - MA
@@ -456,7 +459,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">James E. Higgins</a></h4>
+							<h4><a href="member_profile">James E. Higgins</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Braintree - MA
@@ -471,7 +474,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">John Lewis</a></h4>
+							<h4><a href="member_profile">John Lewis</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Boston - MA
@@ -486,7 +489,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Paul Masterson</a></h4>
+							<h4><a href="member_profile">Paul Masterson</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> S. Ockendon - Essex
@@ -501,7 +504,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Dr. Khalid Ahmed</a></h4>
+							<h4><a href="member_profile">Dr. Khalid Ahmed</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Harlow - Essex
@@ -516,7 +519,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Margaret Short</a></h4>
+							<h4><a href="member_profile">Margaret Short</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Waltham - MA
@@ -531,7 +534,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Emanuela Todeva</a></h4>
+							<h4><a href="member_profile">Emanuela Todeva</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> London - UK
@@ -546,7 +549,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Mark Delicata</a></h4>
+							<h4><a href="member_profile">Mark Delicata</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Scunthorpe - North Lincolnshire
@@ -561,7 +564,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Sir Mohammed E. Hawas</a></h4>
+							<h4><a href="member_profile">Sir Mohammed E. Hawas</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Croydon - UK
@@ -576,7 +579,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Sean M. Connors</a></h4>
+							<h4><a href="member_profile">Sean M. Connors</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Greenfield - MA
@@ -591,7 +594,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Patrick J. Ingoldsby</a></h4>
+							<h4><a href="member_profile">Patrick J. Ingoldsby</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Cheshire - MA
@@ -606,7 +609,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Antony Dodworth</a></h4>
+							<h4><a href="member_profile">Antony Dodworth</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Crewe - Cheshire
@@ -621,7 +624,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Dina S. Guyetsky</a></h4>
+							<h4><a href="member_profile">Dina S. Guyetsky</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Newton - MA
@@ -636,7 +639,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Sergey Zemlyansky</a></h4>
+							<h4><a href="member_profile">Sergey Zemlyansky</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Gloucester - MA
@@ -651,7 +654,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Regis Lemaitre</a></h4>
+							<h4><a href="member_profile">Regis Lemaitre</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Alloa - CLK
@@ -666,7 +669,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Kyle A. Kaplanis</a></h4>
+							<h4><a href="member_profile">Kyle A. Kaplanis</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Newquay, Cornwall - UK
@@ -681,7 +684,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Tracey L. Jonasson</a></h4>
+							<h4><a href="member_profile">Tracey L. Jonasson</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Upper Sackville - NS
@@ -696,7 +699,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Steven J. McArdle</a></h4>
+							<h4><a href="member_profile">Steven J. McArdle</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i>  Zurgena Almeria - Spain
@@ -711,7 +714,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Pedro Abad</a></h4>
+							<h4><a href="member_profile">Pedro Abad</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Valverde del Majano - Segovia
@@ -726,7 +729,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Timothy C.S.A. Lujan</a></h4>
+							<h4><a href="member_profile">Timothy C.S.A. Lujan</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Tumon - Guam
@@ -741,7 +744,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Endymion M. Chen</a></h4>
+							<h4><a href="member_profile">Endymion M. Chen</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Barrigada Heights - NY
@@ -756,7 +759,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Manny Rem D. Santos</a></h4>
+							<h4><a href="member_profile">Manny Rem D. Santos</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Tamuning - Guam
@@ -771,7 +774,7 @@
 							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
 						</div>
 						<div class="team__area-item-content page">
-							<h4><a href="#">Karen C. Gayle</a></h4>
+							<h4><a href="member_profile">Karen C. Gayle</a></h4>
 							<p>Active 3 weeks ago</p>
 							<a class="simple-btn-2" href="#">
 								<i class="fas fa-map-marker-alt"></i> Hagatna - NY
