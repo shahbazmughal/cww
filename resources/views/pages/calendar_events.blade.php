@@ -32,12 +32,48 @@
 			width: 7px;
 			height: 7px;
 		}
+		.calendar .event-container {
+			background: var(--primary-color-1) !important;
+		}
+			
+		@media (max-width: 520px) {
+			.calendar td {
+				padding: 5px 0px;
+				height: 50px;
+			}
+			.calendar .day.has-event:after {
+				top: calc(50% + 14px);
+			}
+			.calendar-container {
+				margin: 0px auto;
+			}
+			.calendar .event-container {
+				padding: 20px;
+			}
+			.calendar .event-container .event-date {
+				margin-bottom: 2px;
+			}
+			.calendar .event-container .event {
+				padding: 8px 12px;
+			}
+			.calendar td {
+				padding: 10px 5px;
+				height: 50px;
+			}
+			.calendar .event-container .close {
+				z-index: 2;
+				width: 20px;
+				height: 20px;
+				top: 10px;
+				right: 10px;
+			}
+		}
     </style>
 
 	@include('includes.menu')
 	
-		<!-- Page Banner Area Start -->
-		<div class="page__banner" data-background="public/assets/img/pages/page-banner.jpg">
+	<!-- Page Banner Area Start -->
+	<div class="page__banner" data-background="public/assets/img/pages/page-banner.jpg">
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-12">
@@ -81,21 +117,27 @@
 			events: [
 				// generate new event after tomorrow for one hour
 				{
-				startDate: new Date(new Date().setHours(new Date().getHours() + 24)).toDateString(),
-				endDate: new Date(new Date().setHours(new Date().getHours() + 25)).toISOString(),
-				summary: 'Visit of the Eiffel Tower'
+					startDate: new Date(new Date().setHours(new Date().getHours() + 24)).toDateString(),
+					endDate: new Date(new Date().setHours(new Date().getHours() + 25)).toISOString(),
+					summary: 'Visit of the Eiffel Tower'
 				},
 				// generate new event for yesterday at noon
 				{
-				startDate: new Date(new Date().setHours(new Date().getHours() - new Date().getHours() - 12, 0)).toISOString(),
-				endDate: new Date(new Date().setHours(new Date().getHours() - new Date().getHours() - 11)).getTime(),
-				summary: 'Restaurant'
+					startDate: new Date(new Date().setHours(new Date().getHours() - new Date().getHours() - 12, 0)).toISOString(),
+					endDate: new Date(new Date().setHours(new Date().getHours() - new Date().getHours() - 11)).getTime(),
+					summary: 'Restaurant'
 				},
 				// generate new event for the last two days
 				{
-				startDate: new Date(new Date().setHours(new Date().getHours() - 48)).toISOString(),
-				endDate: new Date(new Date().setHours(new Date().getHours() - 24)).getTime(),
-				summary: 'Visit of the Louvre'
+					startDate: new Date(new Date().setHours(new Date().getHours() - 48)).toISOString(),
+					endDate: new Date(new Date().setHours(new Date().getHours() - 24)).getTime(),
+					summary: 'Visit of the Louvre'
+				},
+				// generate new event for the last two days
+				{
+					startDate: new Date(new Date().setHours(new Date().getHours() + 240)).toISOString(),
+					endDate: new Date(new Date().setHours(new Date().getHours() + 272)).getTime(),
+					summary: 'Visit of the Louvre'
 				}
 			],
 
@@ -103,5 +145,5 @@
 			$calendar = container.data('plugin_simpleCalendar')
 		});
 	</script>
-	
+
 	@include('includes.html')
