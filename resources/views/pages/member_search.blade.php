@@ -5,7 +5,8 @@
         }
 		.team__area-item-content {
 			text-align: left !important;
-			margin: -60px 10px 0 !important;
+			margin: -60px 15px 0 !important;
+			overflow: hidden;
 		}
 		.team__area-item-content.page h4 {
 			margin-bottom: 10px;
@@ -20,6 +21,18 @@
 		.team__area-item-content .simple-btn-2 {
 			margin-top: 15px;
 			margin-bottom: 0px;
+			font-size: 13px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: flex;
+			align-items: center;
+		}
+		.team__area-item-content .simple-btn-2 span {
+			white-space: nowrap;
+			display: inline-block;
+			overflow: hidden;
+			text-overflow: ellipsis;
 		}
 		.form-select{
 			color: var(--body-color);
@@ -35,6 +48,21 @@
 			outline: none;
 			box-shadow: none;
 			border-color: var(--primary-color-1);
+		}
+		.team__area-item-image {
+			display: block;
+			background: #f0f0f0;
+		}
+		.team__area-item-image img {
+			width: 100%;
+			margin-bottom: 50px;
+		}
+		span.location-away {
+			font-size: 14px;
+			color: #999;
+		}
+		.section-padding {
+			padding: 120px 0px 70px;
 		}
 	</style>
 	@include('includes.menu')
@@ -59,737 +87,8 @@
 	<!-- Page Banner Area End -->
 
 
-	<!-- Member Search Start -->
-	<div class="member__search section-padding">
-        <div class="container">
-			<div class="row">
-				<div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Muhammad Azam Razzak</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Dubai - UAE
-							</a>
-							<span class="location-away">1246 miles away</span>
-						</div>
-					</div>
-				</div>
-                <div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Zacharias Sundstrom</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Helsinki - Finland
-							</a>
-							<span class="location-away">2979 miles away</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Maria Iskra</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i>  Poznan - NY
-							</a>
-							<span class="location-away">3179 miles away</span>
-						</div>
-					</div>
-				</div>
-                <div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Dr. Sven Grutzmeier</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Stockholm - Sweden
-							</a>
-							<span class="location-away">3196 miles away</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Jacob Rix</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Copenhagen - NY
-							</a>
-							<span class="location-away">3367 miles away</span>
-						</div>
-					</div>
-				</div>
-                <div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Ole Jakobson</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Vedbaek - NY
-							</a>
-							<span class="location-away">3369 miles away</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">S¯ren Br¯gger Christensen</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Niva - NY
-							</a>
-							<span class="location-away">3371 miles away</span>
-						</div>
-					</div>
-				</div>
-                <div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Susanne Borcher Stormer</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Bagsvaerd - NY
-							</a>
-							<span class="location-away">3372 miles away</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Bernt M. Christensen</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Helsinge - NY
-							</a>
-							<span class="location-away">3384 miles away</span>
-						</div>
-					</div>
-				</div>
-                <div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Achim Deboeser</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Schondorf am Ammersee - Bavaria
-							</a>
-							<span class="location-away">3440 miles away</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Oliver Von Schweinitz</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Hamburg - Germany
-							</a>
-							<span class="location-away">3468 miles away</span>
-						</div>
-					</div>
-				</div>
-                <div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Philo K. Holland, III</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Wuerzburg - Bavaria
-							</a>
-							<span class="location-away">3483 miles away</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Ubaldo Caracino</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Milan - Italy
-							</a>
-							<span class="location-away">3549 miles away</span>
-						</div>
-					</div>
-				</div>
-                <div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Thomas R. Barth</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Herrliberg - Switzerland
-							</a>
-							<span class="location-away">3560 miles away</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Natalie Kouzeleas</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Marano Ticino - NO
-							</a>
-							<span class="location-away">3575 miles away</span>
-						</div>
-					</div>
-				</div>
-                <div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Servaas Dankers</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Tilburg - Netherlands
-							</a>
-							<span class="location-away">3685 miles away</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Sallian Wildeman-Cox</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Dordrecht - the Netherlands
-							</a>
-							<span class="location-away">3697 miles away</span>
-						</div>
-					</div>
-				</div>
-                <div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Natalie Pothier</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Brussels - NY
-							</a>
-							<span class="location-away">3717 miles away</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Thomas de Schaepdrijver</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Aalst Oost- Vlaanderen - Belgium
-							</a>
-							<span class="location-away">3732 miles away</span>
-						</div>
-					</div>
-				</div>
-                <div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Ann Biebuyck</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Deinze - Belgium
-							</a>
-							<span class="location-away">3754 miles away</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Louis Levy-Garboua</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Paris - France
-							</a>
-							<span class="location-away">3829 miles away</span>
-						</div>
-					</div>
-				</div>
-                <div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Sophie Uettwiler</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Paris - France
-							</a>
-							<span class="location-away">3831 miles away</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Sabine Chen</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Paris - France
-							</a>
-							<span class="location-away">3831 miles away</span>
-						</div>
-					</div>
-				</div>
-                <div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Stefan Lavau</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Paris - France
-							</a>
-							<span class="location-away">3832 miles away</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Joelle Gauthier</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Nozay - France
-							</a>
-							<span class="location-away">3837 miles away</span>
-						</div>
-					</div>
-				</div>
-                <div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Keveisha Robinson Clark</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Roxbury - MA
-							</a>
-							<span class="location-away">3850 miles away</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">James E. Higgins</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Braintree - MA
-							</a>
-							<span class="location-away">3871 miles away</span>
-						</div>
-					</div>
-				</div>
-                <div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">John Lewis</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Boston - MA
-							</a>
-							<span class="location-away">3884 miles away</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Paul Masterson</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> S. Ockendon - Essex
-							</a>
-							<span class="location-away">3887 miles away</span>
-						</div>
-					</div>
-				</div>
-                <div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Dr. Khalid Ahmed</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Harlow - Essex
-							</a>
-							<span class="location-away">3893 miles away</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Margaret Short</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Waltham - MA
-							</a>
-							<span class="location-away">3898 miles away</span>
-						</div>
-					</div>
-				</div>
-                <div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Emanuela Todeva</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> London - UK
-							</a>
-							<span class="location-away">3902 miles away</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Mark Delicata</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Scunthorpe - North Lincolnshire
-							</a>
-							<span class="location-away">3903 miles away</span>
-						</div>
-					</div>
-				</div>
-                <div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Sir Mohammed E. Hawas</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Croydon - UK
-							</a>
-							<span class="location-away">3906 miles away</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Sean M. Connors</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Greenfield - MA
-							</a>
-							<span class="location-away">3913 miles away</span>
-						</div>
-					</div>
-				</div>
-                <div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Patrick J. Ingoldsby</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Cheshire - MA
-							</a>
-							<span class="location-away">3970 miles away</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Antony Dodworth</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Crewe - Cheshire
-							</a>
-							<span class="location-away">3982 miles away</span>
-						</div>
-					</div>
-				</div>
-                <div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Dina S. Guyetsky</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Newton - MA
-							</a>
-							<span class="location-away">3985 miles away</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Sergey Zemlyansky</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Gloucester - MA
-							</a>
-							<span class="location-away">3988 miles away</span>
-						</div>
-					</div>
-				</div>
-                <div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Regis Lemaitre</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Alloa - CLK
-							</a>
-							<span class="location-away">3997 miles away</span>
-						</div>
-					</div>
-				</div>
-                <div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Kyle A. Kaplanis</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Newquay, Cornwall - UK
-							</a>
-							<span class="location-away">4131 miles away</span>
-						</div>
-					</div>
-				</div>
-                <div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Tracey L. Jonasson</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Upper Sackville - NS
-							</a>
-							<span class="location-away">4132 miles away</span>
-						</div>
-					</div>
-				</div>
-                <div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Steven J. McArdle</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i>  Zurgena Almeria - Spain
-							</a>
-							<span class="location-away">4250 miles away</span>
-						</div>
-					</div>
-				</div>
-                <div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Pedro Abad</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Valverde del Majano - Segovia
-							</a>
-							<span class="location-away">4278 miles away</span>
-						</div>
-					</div>
-				</div>
-                <div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Timothy C.S.A. Lujan</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Tumon - Guam
-							</a>
-							<span class="location-away">4593 miles away</span>
-						</div>
-					</div>
-				</div>
-                <div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Endymion M. Chen</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Barrigada Heights - NY
-							</a>
-							<span class="location-away">4593 miles away</span>
-						</div>
-					</div>
-				</div>
-                <div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Manny Rem D. Santos</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Tamuning - Guam
-							</a>
-							<span class="location-away">4593 miles away</span>
-						</div>
-					</div>
-				</div>
-                <div class="col-xl-3 col-lg-4 col-md-6 mb-30">
-					<div class="team__area-item">
-						<div class="team__area-item-image">
-							<img src="public/assets/img/avatar/blank.svg" alt="">
-						</div>
-						<div class="team__area-item-content page">
-							<h4><a href="member_profile">Karen C. Gayle</a></h4>
-							<p>Active 3 weeks ago</p>
-							<a class="simple-btn-2" href="#">
-								<i class="fas fa-map-marker-alt"></i> Hagatna - NY
-							</a>
-							<span class="location-away">4593 miles away</span>
-						</div>
-					</div>
-				</div>
-            </div>
-        </div>
-    </div>
-	<!-- Member Search End -->
-	
 	<!-- Contact Area Start -->
-	<div class="pb-0">
+	<div class="pb-0 mt-120">
         <div class="container">
             <div class="row contact__two-box">
                 <div class="col-xl-12 col-lg-6">
@@ -798,7 +97,7 @@
                         <div class="contact__two-right-form">
                             <form action="#">
                                 <div class="row">
-                                    <div class="col-md-6 mb-30">
+                                    <div class="col-md-6 mb-50">
 										<label class="fw-bold">Industry</label>
                                         <div class="contact__two-right-form-item conbix-contact-item">
 											<select class="form-select" name="industry" id="" data-control="select2" placeholder="Select Industry">
@@ -1022,31 +321,31 @@
 											</select>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 mb-30">
+                                    <div class="col-md-6 mb-50">
 										<label class="fw-bold">Title</label>
                                         <div class="contact__two-right-form-item conbix-contact-item">
-                                            <input type="text" name="title" placeholder="Full Name" required="required">
+                                            <input type="text" name="title" placeholder="Full Name">
                                         </div>
                                     </div>
-                                    <div class="col-md-6 mb-30">
+                                    <div class="col-md-6 mb-50">
 										<label class="fw-bold">Name</label>
                                         <div class="contact__two-right-form-item conbix-contact-item">
-                                            <input type="text" name="name" placeholder="Full Name" required="required">
+                                            <input type="text" name="name" placeholder="Full Name" >
                                         </div>
                                     </div>
-                                    <div class="col-md-6 mb-30">
+                                    <div class="col-md-6 mb-50">
 										<label class="fw-bold">Company</label>
                                         <div class="contact__two-right-form-item conbix-contact-item">
-                                            <input type="text" name="Company" placeholder="Company Name" required="required">
+                                            <input type="text" name="Company" placeholder="Company Name">
                                         </div>
                                     </div>
                                     <div class="col-md-6 md-mb-30">
 										<label class="fw-bold">Keyword</label>
                                         <div class="contact__two-right-form-item conbix-contact-item">
-                                            <input type="text" name="keyword" placeholder="Keyword" required="required">											
+                                            <input type="text" name="keyword" placeholder="Keyword">											
                                         </div>
                                     </div>
-                                    <div class="col-md-6 mb-30">
+                                    <div class="col-md-6 mb-50">
 										<label class="fw-bold">Location</label>
                                         <div class="contact__two-right-form-item conbix-contact-item">
                                             <input type="text" name="Location" value="Lahore, Punjab, PK" placeholder="Location">
@@ -1066,10 +365,743 @@
         </div>
     </div>        
     <!-- Contact Area End -->
+
+
+	<!-- Member Search Start -->
+	<div class="member__search section-padding">
+        <div class="container">
+			<div class="row">
+				<div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Muhammad Azam Razzak</a></h4>
+							<p>Active 3 weeks ago</p>
+							
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> <span>Dubai - UAE</span>
+							</div>
+							<span class="location-away">1246 miles away</span>
+						</div>
+					</div>
+				</div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Zacharias Sundstrom</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Helsinki - Finland
+							</div>
+							<span class="location-away">2979 miles away</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Maria Iskra</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i>  Poznan - NY
+							</div>
+							<span class="location-away">3179 miles away</span>
+						</div>
+					</div>
+				</div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Dr. Sven Grutzmeier</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Stockholm - Sweden
+							</div>
+							<span class="location-away">3196 miles away</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Jacob Rix</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Copenhagen - NY
+							</div>
+							<span class="location-away">3367 miles away</span>
+						</div>
+					</div>
+				</div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Ole Jakobson</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Vedbaek - NY
+							</div>
+							<span class="location-away">3369 miles away</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">S¯ren Br¯gger Christensen</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Niva - NY
+							</div>
+							<span class="location-away">3371 miles away</span>
+						</div>
+					</div>
+				</div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Susanne Borcher Stormer</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Bagsvaerd - NY
+							</div>
+							<span class="location-away">3372 miles away</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Bernt M. Christensen</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Helsinge - NY
+							</div>
+							<span class="location-away">3384 miles away</span>
+						</div>
+					</div>
+				</div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Achim Deboeser</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> <span>Schondorf am Ammersee - Bavaria</span>
+							</div>
+							<span class="location-away">3440 miles away</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Oliver Von Schweinitz</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Hamburg - Germany
+							</div>
+							<span class="location-away">3468 miles away</span>
+						</div>
+					</div>
+				</div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Philo K. Holland, III</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Wuerzburg - Bavaria
+							</div>
+							<span class="location-away">3483 miles away</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Ubaldo Caracino</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Milan - Italy
+							</div>
+							<span class="location-away">3549 miles away</span>
+						</div>
+					</div>
+				</div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Thomas R. Barth</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Herrliberg - Switzerland
+							</div>
+							<span class="location-away">3560 miles away</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Natalie Kouzeleas</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Marano Ticino - NO
+							</div>
+							<span class="location-away">3575 miles away</span>
+						</div>
+					</div>
+				</div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Servaas Dankers</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Tilburg - Netherlands
+							</div>
+							<span class="location-away">3685 miles away</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Sallian Wildeman-Cox</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Dordrecht - the Netherlands
+							</div>
+							<span class="location-away">3697 miles away</span>
+						</div>
+					</div>
+				</div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Natalie Pothier</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Brussels - NY
+							</div>
+							<span class="location-away">3717 miles away</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Thomas de Schaepdrijver</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Aalst Oost- Vlaanderen - Belgium
+							</div>
+							<span class="location-away">3732 miles away</span>
+						</div>
+					</div>
+				</div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Ann Biebuyck</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Deinze - Belgium
+							</div>
+							<span class="location-away">3754 miles away</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Louis Levy-Garboua</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Paris - France
+							</div>
+							<span class="location-away">3829 miles away</span>
+						</div>
+					</div>
+				</div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Sophie Uettwiler</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Paris - France
+							</div>
+							<span class="location-away">3831 miles away</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Sabine Chen</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Paris - France
+							</div>
+							<span class="location-away">3831 miles away</span>
+						</div>
+					</div>
+				</div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Stefan Lavau</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Paris - France
+							</div>
+							<span class="location-away">3832 miles away</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Joelle Gauthier</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Nozay - France
+							</div>
+							<span class="location-away">3837 miles away</span>
+						</div>
+					</div>
+				</div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Keveisha Robinson Clark</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Roxbury - MA
+							</div>
+							<span class="location-away">3850 miles away</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">James E. Higgins</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Braintree - MA
+							</div>
+							<span class="location-away">3871 miles away</span>
+						</div>
+					</div>
+				</div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">John Lewis</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Boston - MA
+							</div>
+							<span class="location-away">3884 miles away</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Paul Masterson</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> S. Ockendon - Essex
+							</div>
+							<span class="location-away">3887 miles away</span>
+						</div>
+					</div>
+				</div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Dr. Khalid Ahmed</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Harlow - Essex
+							</div>
+							<span class="location-away">3893 miles away</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Margaret Short</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Waltham - MA
+							</div>
+							<span class="location-away">3898 miles away</span>
+						</div>
+					</div>
+				</div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Emanuela Todeva</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> London - UK
+							</div>
+							<span class="location-away">3902 miles away</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Mark Delicata</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Scunthorpe - North Lincolnshire
+							</div>
+							<span class="location-away">3903 miles away</span>
+						</div>
+					</div>
+				</div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Sir Mohammed E. Hawas</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Croydon - UK
+							</div>
+							<span class="location-away">3906 miles away</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Sean M. Connors</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Greenfield - MA
+							</div>
+							<span class="location-away">3913 miles away</span>
+						</div>
+					</div>
+				</div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Patrick J. Ingoldsby</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Cheshire - MA
+							</div>
+							<span class="location-away">3970 miles away</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Antony Dodworth</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Crewe - Cheshire
+							</div>
+							<span class="location-away">3982 miles away</span>
+						</div>
+					</div>
+				</div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Dina S. Guyetsky</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Newton - MA
+							</div>
+							<span class="location-away">3985 miles away</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Sergey Zemlyansky</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Gloucester - MA
+							</div>
+							<span class="location-away">3988 miles away</span>
+						</div>
+					</div>
+				</div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Regis Lemaitre</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Alloa - CLK
+							</div>
+							<span class="location-away">3997 miles away</span>
+						</div>
+					</div>
+				</div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Kyle A. Kaplanis</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Newquay, Cornwall - UK
+							</div>
+							<span class="location-away">4131 miles away</span>
+						</div>
+					</div>
+				</div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Tracey L. Jonasson</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Upper Sackville - NS
+							</div>
+							<span class="location-away">4132 miles away</span>
+						</div>
+					</div>
+				</div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Steven J. McArdle</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i>  Zurgena Almeria - Spain
+							</div>
+							<span class="location-away">4250 miles away</span>
+						</div>
+					</div>
+				</div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Pedro Abad</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> <span>Valverde del Majano - Segovia</span>
+							</div>
+							<span class="location-away">4278 miles away</span>
+						</div>
+					</div>
+				</div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Timothy C.S.A. Lujan</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Tumon - Guam
+							</div>
+							<span class="location-away">4593 miles away</span>
+						</div>
+					</div>
+				</div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Endymion M. Chen</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Barrigada Heights - NY
+							</div>
+							<span class="location-away">4593 miles away</span>
+						</div>
+					</div>
+				</div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Manny Rem D. Santos</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Tamuning - Guam
+							</div>
+							<span class="location-away">4593 miles away</span>
+						</div>
+					</div>
+				</div>
+                <div class="col-xl-3 col-lg-4 col-md-6 mb-50">
+					<div class="team__area-item">
+						<div class="team__area-item-image">
+							<img src="public/assets/img/avatar/gravatar.jpg" alt="">
+						</div>
+						<div class="team__area-item-content page">
+							<h4><a href="member_profile">Karen C. Gayle</a></h4>
+							<p>Active 3 weeks ago</p>
+							<div class="simple-btn-2" >
+								<i class="fas fa-map-marker-alt"></i> Hagatna - NY
+							</div>
+							<span class="location-away">4593 miles away</span>
+						</div>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
+	<!-- Member Search End -->
+	
+	
     <!-- Map Area Start -->
-    <div class="contact__two-map">
+    <!-- <div class="contact__two-map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830894606!2d-74.11976383964463!3d40.69766374865767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1652012644726!5m2!1sen!2sbd" loading="lazy"></iframe>
-    </div> 
+    </div>  -->
     <!-- Map Area End --> 
 	@include('includes.footer')
 	
