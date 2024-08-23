@@ -1,4 +1,11 @@
 @include('includes.header')
+	<style>
+		@media (max-width: 480px) {
+			.consulting__area-right-list span {
+				font-size: 13px;
+			}
+		}	
+	</style>
 
 	@include('includes.menu')
 	<!-- Banner Area Start -->

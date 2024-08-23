@@ -40,6 +40,7 @@
                         <a href="/">
 							<img class="dark-n" src="public/logo.png" alt="">
 							<img class="light-n" src="public/logo.png" alt="">
+							<img class="mobile-show" src="public/cww.png" alt="">
 						</a>
                     </div>
                 </div>
