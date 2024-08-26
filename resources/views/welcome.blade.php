@@ -197,7 +197,7 @@
 						</div>
 						<div class="about__two-right-btn">
 							<div>
-								<a class="btn-six" href="#">Read more<i class="far fa-chevron-double-right"></i></a>
+								<a class="btn-six" href="/about">Read more<i class="far fa-chevron-double-right"></i></a>
 							</div>
 							<div class="about__two-right-btn-author">
 								<div class="about__two-right-btn-author-avatar">

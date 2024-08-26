@@ -1,4 +1,5 @@
 @include('includes.header')
+    <link href="public/assets/css/jquery.datepicker2.css" rel="stylesheet" />
 	<style>
         .page__banner-content > span {
             font-size: 60px;
@@ -16,6 +17,25 @@
 			box-shadow: none;
 			border-color: var(--primary-color-1);
 		}
+        .jquery-datepicker.theme-light {
+            z-index: 999;
+        }
+        .jquery-datepicker.theme-light .datepicker-box .box-row.row-week .box-cell.cell-selected {
+            background: #3d4955;
+            color: #FFFFFF;
+        }
+        .jquery-datepicker {
+            width: 300px;
+            height: 300px;
+        }
+        .jquery-datepicker.theme-light .datepicker-box .box-row.row-week .box-cell.cell-today {
+            /* background: #FFFFFF;
+            color: #3d4955; */
+            font-weight: 800;
+        }
+        .jquery-datepicker .datepicker-box .box-row .box-cell {
+            cursor: pointer;
+        }
     </style>
 	@include('includes.menu')
 	
@@ -107,12 +127,12 @@
                                 </div>
                                 <div class="col-md-6 mb-30">
                                     <div class="contact__two-right-form-item conbix-contact-item">
-                                        <input type="text" name="start_date" placeholder="Start Date" required="required">
+                                        <input type="text" name="start_date" placeholder="Start Date" data-select="datepicker" required="required">
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-30">
                                     <div class="contact__two-right-form-item conbix-contact-item">
-                                        <input type="text" name="end_date" placeholder="End Date" required="required">											
+                                        <input type="text" name="end_date" placeholder="End Date" data-select="datepicker" required="required">											
                                     </div>
                                 </div>
                                 <div class="col-md-12 mb-30">
@@ -139,4 +159,5 @@
 	@include('includes.scripts')
 	<script type="text/javascript" src="public/assets/js/ckeditor.js"></script>
 	<script type="text/javascript" src="public/assets/js/editor.js"></script>
+    <script type="text/javascript" src="public/assets/js/jquery.datepicker2.js"></script>
 	@include('includes.html')

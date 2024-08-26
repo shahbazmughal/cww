@@ -69,7 +69,7 @@
                 <div class="col-xl-6 col-lg-6 lg-mb-30">
                     <div class="contact__three-left mr-40 xl-mr-0">
                         <div class="contact__three-left-map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.2602733086333!2d-0.12800118409026112!3d51.508440818447816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x50056253c5cc0d3d!2s9C3XGV5F%2B9M!5e0!3m2!1sen!2sbd!4v1639466450977!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.569654581897!2d-73.70087029999999!3d40.6614158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c264620af71877%3A0x4119ece99ee38d07!2s33%20W%20Hawthorne%20Ave%2C%20Valley%20Stream%2C%20NY%2011580%2C%20USA!5e0!3m2!1sen!2s!4v1724675610950!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>

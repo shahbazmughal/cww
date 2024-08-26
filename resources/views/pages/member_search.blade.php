@@ -1,4 +1,6 @@
 @include('includes.header')
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+	
 	<style>
 		.page__banner-content > span {
             font-size: 70px;
@@ -64,6 +66,36 @@
 		.section-padding {
 			padding: 120px 0px 70px;
 		}
+		.contact__two-map {
+			margin-top: 0;
+		}
+		.select2-container--default .select2-selection--single {
+			background-color: #fff;
+			border: 1px solid var(--border-color-2);
+			border-radius: 6px !important;
+		}
+		.select2-dropdown {
+			border: 1px solid var(--border-color-2);
+		}
+		.select2-container .select2-selection--single {
+			height: 60px;
+		}
+		.select2-container--default .select2-selection--single .select2-selection__rendered {
+			color: var(--body-color);
+			line-height: 58px;
+			padding: 0 15px !important;
+		}
+		.select2-container--default .select2-selection--single .select2-selection__arrow {
+			height: 60px;
+			right: 8px;
+		}
+		.select2-search--dropdown .select2-search__field {
+			padding: 10px;
+			height: 40px;
+		}
+		.select2-search--dropdown {
+			padding: 10px;
+		}
 	</style>
 	@include('includes.menu')
 	
@@ -99,9 +131,9 @@
                                 <div class="row">
                                     <div class="col-md-6 mb-50">
 										<label class="fw-bold">Industry</label>
-                                        <div class="contact__two-right-form-item conbix-contact-item">
-											<select class="form-select" name="industry" id="" data-control="select2" placeholder="Select Industry">
-												<option>Select Industry</option>
+                                        <div class="contact__two-right-form-item">
+											<select class="form-select m-select2" name="industry" data-placeholder="Select Industry">
+												<option value="">Select Industry</option>
 												<option value="175"> Behavioral Health</option>
 												<option value="216">****738972 71477 738972 100154 1 Inner Circle Lifetime 3/27/2024 3/27/2024 Continental Who's Who Custom Wall Plaque Expanded Biographical Profile Access to Benefits And Privileges 900 0 0 49 949 _x000B__x000B_</option>
 												<option value="206">Academia</option>
@@ -1099,11 +1131,19 @@
 	
 	
     <!-- Map Area Start -->
-    <!-- <div class="contact__two-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830894606!2d-74.11976383964463!3d40.69766374865767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1652012644726!5m2!1sen!2sbd" loading="lazy"></iframe>
-    </div>  -->
+    <div class="contact__two-map">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.569654581897!2d-73.70087029999999!3d40.6614158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c264620af71877%3A0x4119ece99ee38d07!2s33%20W%20Hawthorne%20Ave%2C%20Valley%20Stream%2C%20NY%2011580%2C%20USA!5e0!3m2!1sen!2s!4v1724675610950!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div> 
     <!-- Map Area End --> 
 	@include('includes.footer')
 	
 	@include('includes.scripts')
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$(".m-select2").select2({
+				placeholder: 'Select an option'
+			});
+		});
+	</script>
 	@include('includes.html')
