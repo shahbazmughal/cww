@@ -84,7 +84,7 @@
 				</div>
 				<div class="col-xl-4 col-sm-4">
 					<div class="services__two-arrow about__two-right-btn t-right sm-t-center">
-						<a class="btn-six" href="#">Search Members<i class="far fa-chevron-double-right"></i></a>
+						<a class="btn-six" href="/member_search">Search Members<i class="far fa-chevron-double-right"></i></a>
 					</div>
 				</div>
 			</div>
