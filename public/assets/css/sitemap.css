@@ -91,7 +91,7 @@ ul, li {
 	position: relative;
 	vertical-align: top;
 	padding-top: 20px;
-	margin-right: 20px;
+	margin-right: 5px;
 	white-space: normal;
 	width: 100%;
 }
@@ -154,7 +154,7 @@ ul, li {
 	width: 15px;
 }
 
-.primary ul ul ul li a { border-top-color: #2ecc71; width: auto; }
+.primary ul ul ul li a { border-top-color: #2ecc71; width: auto;    font-size: 10px; }
 .primary ul ul ul li a:before, .primary ul ul ul li .fa { color: #2ecc71; }
 
 /* --- Level 3 --- */
@@ -199,7 +199,5 @@ ul, li {
 	width: 220px;
 }
 a.multi {
-    width: 150px !important;
-    font-size: 13px !important;
-    text-transform: capitalize;
+    width: 130px !important;
 }

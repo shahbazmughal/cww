@@ -37,38 +37,40 @@
 									<ul>
 									<li><a href="/about">About</a></li>
 										<li><a href="/faq">FAQ</a></li>
-										<li><a href="/calendar_events">CALENDAR EVENTS</a></li>
-										<li><a href="/submit_events">SUBMIT CALENDAR EVENT</a></li>
+										<li><a href="/calendar_events">Calendar Events</a></li>
+										<li><a href="/submit_events">Submit Calendar Event</a></li>
 									</ul>
 								</li>
 								<li>
 									<a href="">Why CWW</a>
 									<ul>
-									<li><a href="/testimonials">TESTIMONIALS</a></li>
-										<li><a href="/benefits">BENEFITS</a></li>
+									<li><a href="/testimonials">Testimonials</a></li>
+										<li><a href="/benefits">Benefits</a></li>
 									</ul>
 								</li>
 								<li>
-									<a href="">CONNECT</a>
+									<a href="">Connect</a>
 									<ul>
-										<li><a href="/member_search">FIND MEMBERS</a></li>
+										<li><a href="/member_search">Find Memebers</a></li>
 										<li>
-											<a href="">JOB POST SUBMISSION</a>
+											<a href="">Job Post Submission</a>
 											<ul>
-												<li><a href="/job_posts" class="multi">CURRENT JOB POSTS</a></li>
-												<li><a href="/submit_job" class="multi">SUBMIT A JOB POST</a></li>
+												<li><a href="/job_posts" class="multi">Current Job Posts</a></li>
+												<li><a href="/submit_job" class="multi">Submit A Job Post</a></li>
 											</ul>
 										</li>
 										<li>
-											<a href="">COMMUNITY POST SUBMISSION</a>
+											<a href="">Community Post Submission</a>
 											<ul>
 												<li><a href="/community_posts" class="multi">See Community Posts</a></li>
 												<li><a href="//submit_community" class="multi">Submit A Community Post</a></li>
 											</ul>
 										</li>
 										<li>
-											<a href="/blog_posts">CWW CHRONICLES</a>
-											<a href="/press_releases">MEDIA ROOM</a>
+											<a href="/blog_posts">CWW Chronicles</a>
+										</li>
+										<li>
+											<a href="/press_releases">Media Room</a>
 										</li>
 									</ul>
 								</li>
@@ -87,11 +89,11 @@
 									<li><a href="/member-spotlight">Pinnacle Memeber Spotlight</a></li>
 										<li><a href="/inner-circle-magazine">Inner Circle Magazine</a></li>
 										<li><a href="/video-marketing">CWW Visual Promotions</a></li>
-										<li><a href="/contact">SUBMIT CALENDAR EVENT</a></li>
+										<li><a href="/contact">Advertise</a></li>
 									</ul>
 								</li>
 								<li>
-									<a href="/contact">CWW MINDSET</a>
+									<a href="/contact">Contact</a>
 								</li>
 							</ul>
 							</li>
