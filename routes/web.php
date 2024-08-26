@@ -66,6 +66,27 @@ Route::get('/submit_events', function () {
 })->name('submit_events');
 
 
+Route::get('/member-spotlight', function () {
+    return view('pages.member_spotlight');
+})->name('member-spotlight');
+
+Route::get('/inner-circle-magazine', function () {
+    return view('pages.inner_circle_magazine');
+})->name('inner-circle-magazine');
+
+Route::get('/video-marketing', function () {
+    return view('pages.video_marketing');
+})->name('video-marketing');
+
+Route::get('/press_releases', function () {
+    return view('pages.press_releases');
+})->name('press_releases');
+
+
+Route::get('/press_releases/details', function () {
+    return view('pages.press_releases_details');
+})->name('press_releases_details');
+
 Route::post('/register', [RegistrationController::class, 'register'])->name('register');
 Route::post('/login', [AuthController::class, 'login']);
 Route::get('/logout', [AuthController::class, 'logout'])->name('logout');

@@ -82,7 +82,7 @@
 										</ul>
 									</li>
                                     <li><a href="/blog_posts">CWW Chronicles</a></li>
-                                    <li><a href="#">Media Room</a></li>
+                                    <li><a href="/press_releases">Media Room</a></li>
                                 </ul>
                             </li>
                             <li class="menu-item-has-children"><a href="#">Helpful Links</a>
@@ -95,10 +95,10 @@
                             </li>
                             <li class="menu-item-has-children"><a href="#">Branding Workshow</a>
                                 <ul class="sub-menu">
-                                    <li><a href="#">Pinnacle Memeber Spotlight</a></li>
-                                    <li><a href="#">Inner Circle Magazine</a></li>
-                                    <li><a href="#">CWW Visual Promotions</a></li>
-                                    <li><a href="#">Advertise</a></li>						
+                                    <li><a href="/member-spotlight">Pinnacle Memeber Spotlight</a></li>
+                                    <li><a href="/inner-circle-magazine">Inner Circle Magazine</a></li>
+                                    <li><a href="/video-marketing">CWW Visual Promotions</a></li>
+                                    <li><a href="/contact">Advertise</a></li>						
                                 </ul>
                             </li>
                             <li class="menu-item"><a href="/contact">Contact</a>

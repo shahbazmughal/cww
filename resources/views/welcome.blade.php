@@ -333,7 +333,7 @@
 					<span>MARKETING LAB</span>
 				</div>
 				<div class="portfolio-item-inner-icon">
-					<a href="#"><i class="fal fa-long-arrow-up"></i></a>
+					<a href="/member-spotlight"><i class="fal fa-long-arrow-up"></i></a>
 				</div>
 			</div>
 		</div>
@@ -345,7 +345,7 @@
 					<span>MARKETING LAB</span>
 				</div>
 				<div class="portfolio-item-inner-icon">
-					<a href="#"><i class="fal fa-long-arrow-up"></i></a>
+					<a href="/inner-circle-magazine"><i class="fal fa-long-arrow-up"></i></a>
 				</div>
 			</div>
 		</div>
@@ -357,7 +357,7 @@
 					<span>MARKETING LAB</span>
 				</div>
 				<div class="portfolio-item-inner-icon">
-					<a href="#"><i class="fal fa-long-arrow-up"></i></a>
+					<a href="/press_releases"><i class="fal fa-long-arrow-up"></i></a>
 				</div>
 			</div>
 		</div>
@@ -369,7 +369,7 @@
 					<span>MARKETING LAB</span>
 				</div>
 				<div class="portfolio-item-inner-icon">
-					<a href="#"><i class="fal fa-long-arrow-up"></i></a>
+					<a href="/video-marketing"><i class="fal fa-long-arrow-up"></i></a>
 				</div>
 			</div>
 		</div>
@@ -381,7 +381,7 @@
 					<span>MARKETING LAB</span>
 				</div>
 				<div class="portfolio-item-inner-icon">
-					<a href="#"><i class="fal fa-long-arrow-up"></i></a>
+					<a href="/contact"><i class="fal fa-long-arrow-up"></i></a>
 				</div>
 			</div>
 		</div>
