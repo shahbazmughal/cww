@@ -63,9 +63,9 @@
 						<div class="footer__three-widget-solution">
 							<ul class="text-light">
 								<li><a href="/calendar_events"><i class="far fa-chevron-double-right"></i>Events</a></li>
-								<li><a href="#"><i class="far fa-chevron-double-right"></i>Terms of Service</a></li>
-								<li><a href="#"><i class="far fa-chevron-double-right"></i>Site Map</a></li>
-								<li><a href="#"><i class="far fa-chevron-double-right"></i>Privacy Policy</a></li>
+								<li><a href="/terms-of-service"><i class="far fa-chevron-double-right"></i>Terms of Service</a></li>
+								<li><a href="/sitemap"><i class="far fa-chevron-double-right"></i>Site Map</a></li>
+								<li><a href="/privacy-policy"><i class="far fa-chevron-double-right"></i>Privacy Policy</a></li>
 							</ul>
 						</div>
 					</div>
