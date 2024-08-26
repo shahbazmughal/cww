@@ -95,7 +95,7 @@
                     <div class="contact__two-right">
                         <h3 class="mb-5 text-center">The results shown are in proximity to your search.</h3> 
                         <div class="contact__two-right-form">
-                            <form action="#">
+                            <form action="#" method="get" id="form-members">
                                 <div class="row">
                                     <div class="col-md-6 mb-50">
 										<label class="fw-bold">Industry</label>
@@ -348,7 +348,7 @@
                                     <div class="col-md-6 mb-50">
 										<label class="fw-bold">Location</label>
                                         <div class="contact__two-right-form-item conbix-contact-item">
-                                            <input type="text" name="Location" value="Lahore, Punjab, PK" placeholder="Location">
+                                            <input type="text" name="Location" value="" placeholder="Location">
                                         </div>
                                     </div>
                                     <div class="col-md-12">
