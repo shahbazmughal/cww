@@ -12211,6 +12211,11 @@ select.form-control {
 .header__area a img.mobile-show {
   display: none;
 }
+a.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
 @media (max-width:520px)  {
   .switch__tab {
       display: none;

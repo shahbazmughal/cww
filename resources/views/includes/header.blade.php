@@ -13,21 +13,21 @@
 	<!-- Title of Site -->
 	<title>Home Page - CWW</title>
 	<!-- Favicons -->
-	<link rel="icon" type="image/png" href="public/favicon.png">
+	<link rel="icon" type="image/png" href="/public/favicon.png">
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="public/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/public/assets/css/bootstrap.min.css">
 	<!-- Font Awesome CSS -->
-	<link rel="stylesheet" href="public/assets/css/all.css">
+	<link rel="stylesheet" href="/public/assets/css/all.css">
 	<!-- Animate CSS -->
-	<link rel="stylesheet" href="public/assets/css/animate.css">
+	<link rel="stylesheet" href="/public/assets/css/animate.css">
 	<!-- Swiper Bundle CSS -->
-	<link rel="stylesheet" href="public/assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="/public/assets/css/swiper-bundle.min.css">
 	<!-- Magnific Popup CSS -->
-	<link rel="stylesheet" href="public/assets/css/magnific-popup.css">
+	<link rel="stylesheet" href="/public/assets/css/magnific-popup.css">
 	<!-- Mean Menu CSS -->
-	<link rel="stylesheet" href="public/assets/css/meanmenu.min.css">
+	<link rel="stylesheet" href="/public/assets/css/meanmenu.min.css">
 	<!-- Custom CSS -->
-	<link rel="stylesheet" href="public/assets/sass/style.css"> 
+	<link rel="stylesheet" href="/public/assets/sass/style.css"> 
 </head>
 
 <body>
