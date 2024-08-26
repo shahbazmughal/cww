@@ -70,14 +70,14 @@
 									<li class="menu-item-has-children">
                                         <a href="#">Job Post Submission</a>
 										<ul class="sub-menu">
-											<li><a href="#">See Current Job Posts</a></li>
+											<li><a href="/job_posts">See Current Job Posts</a></li>
 											<li><a href="/submit_job">Submit A Job Post</a></li>
 										</ul>
 									</li>
 									<li class="menu-item-has-children">
                                         <a href="#">Community Post Submission</a>
 										<ul class="sub-menu">
-											<li><a href="#">See Community Posts</a></li>
+											<li><a href="/community_posts">See Community Posts</a></li>
 											<li><a href="/submit_community">Submit A Community Post</a></li>
 										</ul>
 									</li>
