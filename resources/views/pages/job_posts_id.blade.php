@@ -14,12 +14,12 @@
 			<div class="row">
 				<div class="col-xl-12">
 					<div class="page__banner-content">
-                        <span>Professional</span>
+                        <span>Job Post</span>
 						<ul>
 							<li><a href="index-2.html">Home</a><span>|</span></li>
-							<li>Professional Blog</li>
+							<li>Job Post</li>
 						</ul>
-						<h1>Professional Blog</h1>
+						<h1>Job Post</h1>
 					</div>
 				</div>
 			</div>

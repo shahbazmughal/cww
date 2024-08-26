@@ -86,9 +86,25 @@ Route::get('/member_profile', function () {
     return view('pages.member_profile');
 })->name('member_profile');
 
+Route::get('/job_posts', function () {
+    return view('pages.job_posts');
+})->name('job_posts');
+
+Route::get('/job_posts/id', function () {
+    return view('pages.job_posts_id');
+})->name('job_posts_id');
+
 Route::get('/submit_job', function () {
     return view('pages.submit_job');
 })->name('submit_job');
+
+Route::get('/community_posts', function () {
+    return view('pages.community_posts');
+})->name('community_posts');
+
+Route::get('/community_posts/id', function () {
+    return view('pages.community_posts_id');
+})->name('community_posts_id');
 
 Route::get('/submit_community', function () {
     return view('pages.submit_community');
