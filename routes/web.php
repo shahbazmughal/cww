@@ -131,4 +131,16 @@ Route::get('/submit_community', function () {
     return view('pages.submit_community');
 })->name('submit_community');
 
+Route::get('/privacy-policy', function () {
+    return view('pages.privacy-policy');
+})->name('privacy-policy');
+
+Route::get('/terms-of-service', function () {
+    return view('pages.terms-of-service');
+})->name('terms-of-service');
+
+Route::get('/sitemap', function () {
+    return view('pages.sitemap');
+})->name('sitemap');
+
 // Route::get('about', 'PagesController@about');

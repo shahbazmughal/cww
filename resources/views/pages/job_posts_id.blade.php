@@ -9,7 +9,7 @@
 	@include('includes.menu')
 	
     	<!-- Page Banner Area Start -->
-    <div class="page__banner" data-background="public/assets/img/pages/page-banner.jpg">
+    <div class="page__banner" data-background="/public/assets/img/pages/page-banner.jpg">
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-12">
@@ -45,14 +45,14 @@
                             </ul>
                             <h3 class="mt-20">Trust is an essential element to any successful professional relationship.</h3>
                         </div>
-                        <p>Without trust, business relationships cannot move forward to eventually serve as mutually beneficial entities. In a time where corruption and mistrust in the business world is exceedingly publicized, why is it important to continue to trust our clients, co-workers, and other members of the business community?</p>
+                        <p>Without trust, business relationships cannot move forward to eventually serve as mutually beneficial entities. In a time where corruption and mistrust in the business world is exceedingly /publicized, why is it important to continue to trust our clients, co-workers, and other members of the business community?</p>
                         <div class="dark__image">							
-							<img class="img__full mt-35 mb-30" src="public/assets/img/blog/blog-details.jpg" alt="">
+							<img class="img__full mt-35 mb-30" src="/public/assets/img/blog/blog-details.jpg" alt="">
 						</div>
                         <p>Trust is imperative, especially in these trying economic times. Although lately it may seem as if corruption and greed are more prevalent than trust and positive relationships, this is not the case. By focusing in on our own business practices rather than the media’s portrayal of the business world, we can see that trust always has been important in the life of a professional and will continue to play a central role in the business world.</p>
                         <div class="news__details-left-box">
                             <div class="news__details-left-box-shape">
-                                <img src="public/logo.png" alt="">
+                                <img src="/public/logo.png" alt="">
                             </div>
 							<p>In daily business dealings as well as in the case of professional relationships with clients, trust should always be present as it encourages cooperation, integrity, and confidence. Without these important aspects of trust, professionals in the business world would not find success.</p>
                         </div>
@@ -125,7 +125,7 @@
                             <div class="all__sidebar-item-post">
                                 <div class="post__item">
                                     <div class="post__item-image">
-                                        <a href="single-right-sidebar.html"><img src="public/assets/img/blog/post-3.jpg" alt=""></a>
+                                        <a href="single-right-sidebar.html"><img src="/public/assets/img/blog/post-3.jpg" alt=""></a>
                                     </div>
                                     <div class="post__item-title">
                                         <h6><a href="single-right-sidebar.html">How to Become a Successful Consultant</a></h6>
@@ -134,7 +134,7 @@
                                 </div>                           
                                 <div class="post__item">
                                     <div class="post__item-image">
-                                        <a href="single-right-sidebar.html"><img src="public/assets/img/blog/post-4.jpg" alt=""></a>
+                                        <a href="single-right-sidebar.html"><img src="/public/assets/img/blog/post-4.jpg" alt=""></a>
                                     </div>
                                     <div class="post__item-title">
                                         <h6><a href="single-right-sidebar.html">How to Succeed as a Business Consultant</a></h6>
@@ -143,7 +143,7 @@
                                 </div>                           
                                 <div class="post__item">
                                     <div class="post__item-image">
-                                        <a href="single-right-sidebar.html"><img src="public/assets/img/blog/post-5.jpg" alt=""></a>
+                                        <a href="single-right-sidebar.html"><img src="/public/assets/img/blog/post-5.jpg" alt=""></a>
                                     </div>
                                     <div class="post__item-title">
                                         <h6><a href="single-right-sidebar.html">Financial Consulting for Small Businesses</a></h6>
@@ -168,11 +168,11 @@
                         </div>
                         <div class="all__sidebar-contact">
 							<div class="all__sidebar-contact-image dark__image">
-								<img class="img__full" src="public/assets/img/avatar/avatar-11.jpg" alt="">
+								<img class="img__full" src="/public/assets/img/avatar/avatar-11.jpg" alt="">
 							</div>
 							<div class="all__sidebar-contact-content">
 								<div class="all__sidebar-contact-content-icon">
-									<img src="public/assets/img/icon/question.png" alt="">
+									<img src="/public/assets/img/icon/question.png" alt="">
 								</div>
 								<h3>Let's Join Us</h3>
 								<a class="simple-btn-2" href="contact.html">Contact us<i class="far fa-chevron-double-right"></i></a>  
