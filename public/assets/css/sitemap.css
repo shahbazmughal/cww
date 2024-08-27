@@ -63,9 +63,10 @@
 }
 
 /* --- Root --- */
-ul, li {
+.primary ul, li {
 	position: relative;
 	display: inline-block;
+	padding: 0;
 }
 
 .primary ul li:before,
@@ -85,6 +86,7 @@ ul, li {
 /* --- Level 1 --- */
 .primary ul ul {
 	white-space: nowrap;
+	padding: 0;
 }
 
 .primary ul ul li {
@@ -196,7 +198,7 @@ ul, li {
 .primary > ul > li > a,
 .primary > ul > li > ul > li,
 .secondary li a {
-	width: 220px;
+	width: 200px;
 }
 a.multi {
     width: 130px !important;

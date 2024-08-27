@@ -1,5 +1,9 @@
 @include('includes.header')
-
+	<style>
+        .page__banner-content > span {
+            font-size: 100px;
+        }
+    </style>
 	@include('includes.menu')
 	
 		<!-- Page Banner Area Start -->

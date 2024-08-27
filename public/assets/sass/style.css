@@ -4458,11 +4458,11 @@ Responsive Menu Css
   .header__area-menubar-right-box-btn {
     display: none;
   }
-}
-@media (max-width: 1199px) {
   .header__area-menubar-center-menu ul li a {
     padding: 42px 15px;
   }
+}
+@media (max-width: 1199px) {
   .header__area-menubar-center-menu ul li.menu-item-has-children > a::before {
     right: 3px;
   }
@@ -4473,10 +4473,6 @@ Responsive Menu Css
     padding: 31px 20px 31px 15px;
   }
   .header__area-menubar-right-box-search {
-    margin-left: 30px;
-  }
-  .header__area-menubar-right-sidebar-popup-icon {
-    padding: 38px 0 38px 40px;
     margin-left: 30px;
   }
 }
@@ -12215,7 +12211,18 @@ a.disabled {
   opacity: 0.4;
   pointer-events: none;
 }
-
+@media (max-width: 1199px) {
+  .header__area-menubar-right-sidebar-popup-icon {
+    padding: 22px 20px 22px 20px;
+    margin-left: 0px;
+  }
+  .header__area a img {
+    max-width: 80px;
+  }
+  .header__area-menubar-center-menu ul li a {
+    padding: 22px 10px;
+  }
+}
 @media (max-width:520px)  {
   .switch__tab {
       display: none;
