@@ -1,7 +1,7 @@
 @include('includes.header')
 	<style>
 		.page__banner-content > span {
-			font-size: 70px;
+			font-size: 65px;
 		}
 		.page__banner-content h1 {
 			font-size: 45px;
