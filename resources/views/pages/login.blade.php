@@ -12,8 +12,14 @@
                         <h3 class="text-center mb-0">Please sign in</h3>
                         <p class="mb-30 text-center">Access your Continental Who’s Who member account</p>
                         <div class="getIn__touch-three-right-form">
-                            <form action="{{ url('/login') }}" method="POST">	
+                            <form action="#" id="loginform" method="POST">	
                             <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                <div class="alert alert-success" id="msg-success">
+                                    You are successfully loggedin!
+                                </div>
+                                <div class="alert alert-danger" id="msg-danger">
+                                    Invalid username or password
+                                </div>
                                 <div class="mt-25">
                                     <input type="text" name="email" placeholder="Email Address" required="required">
                                 </div>
@@ -40,4 +46,39 @@
 	@include('includes.footer')
 	
 	@include('includes.scripts')
+    <script>
+        $(document).ready(function() {
+            $('#loginform').on('submit', function(event) {
+                event.preventDefault(); // Prevent the default form submission
+                $(".theme-loader2").show();
+                $(".alert").hide();
+                $.ajax({
+                    url: '{{ route('login') }}', // URL to send the request to
+                    method: 'POST', // HTTP method
+                    data: $(this).serialize(), // Serialize the form data
+                    success: function(response) {
+                        // Handle a successful response
+                        var obj = JSON.parse(response);
+                        $(".theme-loader2").hide();
+                        if(obj.success == true) {
+                            $("#msg-success").show();
+                            $("#msg-danger").hide();
+                            $("#myform")[0].reset();
+                        } else {
+                            $("#msg-success").hide();
+                            $("#msg-danger").show();
+                        }
+                    },
+                    error: function(xhr) {
+                        // Handle errors
+                        $(".theme-loader2").hide();
+                        $("#msg-success").hide();
+                        $("#msg-danger").show();
+                        $("#msg-danger").text(xhr.responseText.message);
+                        // alert('An error occurred: ' + xhr.responseText);
+                    }
+                });
+            });
+        });
+    </script>
 	@include('includes.html')
