@@ -40,7 +40,7 @@
                                         <span class="text-five">Oct</span>
                                     </div>                                    
                                 </li>
-                                <li><a href="#"><i class="far fa-user"></i>Cww-Admin</a></li>
+                                <li><a href="#"><i class="far fa-user"></i>By-Admin</a></li>
                                 <li><a href="#"><i class="far fa-comment-dots"></i>Comments (0)</a></li>
                             </ul>
                             <h3 class="mt-20">Trust is an essential element to any successful professional relationship.</h3>
@@ -112,58 +112,26 @@
                             <h4>Our Solutions</h4>
                             <div class="all__sidebar-item-solution">
                                 <ul>                                    
-                                    <li><a href="single-right-sidebar.html"><i class="far fa-chevron-double-right"></i>Business Consulting<span>(2)</span></a></li>
-                                    <li><a href="single-right-sidebar.html"><i class="far fa-chevron-double-right"></i>Human research<span>(3)</span></a></li>
-                                    <li><a href="single-right-sidebar.html"><i class="far fa-chevron-double-right"></i>Digital solutions<span>(4)</span></a></li>
-                                    <li><a href="single-right-sidebar.html"><i class="far fa-chevron-double-right"></i>strategy & Research<span>(5)</span></a></li>
-                                    <li><a href="single-right-sidebar.html"><i class="far fa-chevron-double-right"></i>Business Model<span>(6)</span></a></li>
+                                    <li><a href="#"><i class="far fa-chevron-double-right"></i>Business Consulting<span>(2)</span></a></li>
+                                    <li><a href="#"><i class="far fa-chevron-double-right"></i>Human research<span>(3)</span></a></li>
+                                    <li><a href="#"><i class="far fa-chevron-double-right"></i>Digital solutions<span>(4)</span></a></li>
+                                    <li><a href="#"><i class="far fa-chevron-double-right"></i>strategy & Research<span>(5)</span></a></li>
+                                    <li><a href="#"><i class="far fa-chevron-double-right"></i>Business Model<span>(6)</span></a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="all__sidebar-item">
-                            <h4>Recent Post</h4>
+                            <h4>Recent Community Post</h4>
                             <div class="all__sidebar-item-post">
                                 <div class="post__item">
                                     <div class="post__item-image">
-                                        <a href="single-right-sidebar.html"><img src="/public/assets/img/blog/post-3.jpg" alt=""></a>
+                                        <a href="#"><img src="/public/assets/img/blog/post-3.jpg" alt=""></a>
                                     </div>
                                     <div class="post__item-title">
-                                        <h6><a href="single-right-sidebar.html">How to Become a Successful Consultant</a></h6>
+                                        <h6><a href="#">How to Become a Successful Consultant</a></h6>
                                         <span><i class="far fa-calendar-alt"></i>Dec 31, 2022</span>
                                     </div>
-                                </div>                           
-                                <div class="post__item">
-                                    <div class="post__item-image">
-                                        <a href="single-right-sidebar.html"><img src="/public/assets/img/blog/post-4.jpg" alt=""></a>
-                                    </div>
-                                    <div class="post__item-title">
-                                        <h6><a href="single-right-sidebar.html">How to Succeed as a Business Consultant</a></h6>
-                                        <span><i class="far fa-calendar-alt"></i>Dec 27, 2022</span>
-                                    </div>
-                                </div>                           
-                                <div class="post__item">
-                                    <div class="post__item-image">
-                                        <a href="single-right-sidebar.html"><img src="/public/assets/img/blog/post-5.jpg" alt=""></a>
-                                    </div>
-                                    <div class="post__item-title">
-                                        <h6><a href="single-right-sidebar.html">Financial Consulting for Small Businesses</a></h6>
-                                        <span><i class="far fa-calendar-alt"></i>Dec 23, 2022</span>
-                                    </div>
-                                </div>                           
-                            </div>
-                        </div>
-                        <div class="all__sidebar-item">
-                            <h4>Popular Tag</h4>
-                            <div class="all__sidebar-item-tag">
-                                <ul>
-                                    <li><a href="#">Consulting</a></li>
-                                    <li><a href="#">Business</a></li>
-                                    <li><a href="#">Solution</a></li>
-                                    <li><a href="#">Services</a></li>
-                                    <li><a href="#">Grow</a></li>
-                                    <li><a href="#">Research</a></li>
-                                    <li><a href="#">strategy</a></li>
-                                </ul>
+                                </div>                         
                             </div>
                         </div>
                         <div class="all__sidebar-contact">
@@ -175,7 +143,7 @@
 									<img src="/public/assets/img/icon/question.png" alt="">
 								</div>
 								<h3>Let's Join Us</h3>
-								<a class="simple-btn-2" href="contact.html">Contact us<i class="far fa-chevron-double-right"></i></a>  
+								<a class="simple-btn-2" href="/contact">Contact us<i class="far fa-chevron-double-right"></i></a>  
 							</div>                                                     
                         </div>
                     </div>  
