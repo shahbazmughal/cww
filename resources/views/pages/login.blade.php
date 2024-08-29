@@ -1,12 +1,15 @@
 @include('includes.header')
-
-@include('includes.menu')
+    <style>
+        .footer__two {
+            display: none;
+        }
+    </style>
+    @include('includes.menu')
     <!-- Login Area Start -->
     <div class="getIn__touch-three section-padding page-login" data-background="public/assets/img/pages/getInTouchThree.jpg" style="background-image: url(&quot;public/assets/img/pages/getInTouchThree.jpg&quot;);">
         <img class="getIn__touch-three-shape left-right-animate2" src="public/assets/img/shape/getInTouchThree.png" alt="">
         <div class="container">
             <div class="row">
-                
                 <div class="col-xl-5 col-lg-5 mx-auto">
                     <div class="getIn__touch-three-right">
                         <h3 class="text-center mb-0">Please sign in</h3>
@@ -37,11 +40,7 @@
             </div>
         </div>
     </div>
-    <style>
-        .footer__two {
-            display: none;
-        }
-    </style>
+    
     <!-- Login Area End -->
 	@include('includes.footer')
 	
