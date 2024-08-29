@@ -51,7 +51,7 @@
 								<li><a href="/invite"><i class="far fa-chevron-double-right"></i>Invite</a></li>
 								<li><a href="/member_search"><i class="far fa-chevron-double-right"></i>Search Members</a></li>
 								<li><a href="/blog_posts"><i class="far fa-chevron-double-right"></i>CWW Chronicles</a></li>
-								<li><a href="/community_posts/new"><i class="far fa-chevron-double-right"></i>Community Post Submission</a></li>
+								<li><a href="/submit_community"><i class="far fa-chevron-double-right"></i>Community Post Submission</a></li>
 								<li><a href="/community_posts"><i class="far fa-chevron-double-right"></i>Community Posts</a></li>
 							</ul>
 						</div>
