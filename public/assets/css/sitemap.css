@@ -63,7 +63,7 @@
 }
 
 /* --- Root --- */
-.primary ul, li {
+.primary, li {
 	position: relative;
 	display: inline-block;
 	padding: 0;

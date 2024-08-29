@@ -50,14 +50,14 @@
                             <ul>
                                 <li>
                                     <div class="news__details-left-meta-date">
-                                        <span class="text-three">21</span>
-                                        <span class="text-five">Oct</span>
+                                        <span class="text-three">05</span>
+                                        <span class="text-five">Feb</span>
                                     </div>                                    
                                 </li>
                                 <li><a href="#"><i class="far fa-user"></i>By-Admin</a></li>
                                 <li><a href="#"><i class="far fa-comment-dots"></i>Comments (0)</a></li>
                             </ul>
-                            <h3 class="mt-20">Perceived as a business person with integrity</h3>
+                            <h3 class="mt-20">US Shoots Down Balloon</h3>
                         </div>
                         <p class="mb-25">According to an article published on Fortune’s online magazine earlier this year, consumers are completely distrusting of business executives. In fact, the article is titled “Business Leaders Get an ‘F’ in Ethics, Yet Again,” based on findings in a late 2015 Gallup poll.</p>
                         <p>The answer to the above question is multi-faceted, but all facets fall under the umbrella of reputation management. Today, your reputation – good or bad – as a business person is liable to be spread at an alarming rate. Neighborhood Facebook forums promote business reviews, Twitter timelines are chocked-full of users who Tweet at businesses to voice both their complaints and praise, and Yelp was born to generate reviews.</p>
@@ -158,28 +158,10 @@
                                         <a href="#"><img src="/public/assets/img/blog/post-3.jpg" alt=""></a>
                                     </div>
                                     <div class="post__item-title">
-                                        <h6><a href="#">How to Become a Successful Consultant</a></h6>
-                                        <span><i class="far fa-calendar-alt"></i>Dec 31, 2022</span>
+                                        <h6><a href="#">US Shoots Down Balloon</a></h6>
+                                        <span><i class="far fa-calendar-alt"></i>Feb 05</span>
                                     </div>
-                                </div>                           
-                                <div class="post__item">
-                                    <div class="post__item-image">
-                                        <a href="#"><img src="/public/assets/img/blog/post-4.jpg" alt=""></a>
-                                    </div>
-                                    <div class="post__item-title">
-                                        <h6><a href="#">How to Succeed as a Business Consultant</a></h6>
-                                        <span><i class="far fa-calendar-alt"></i>Dec 27, 2022</span>
-                                    </div>
-                                </div>                           
-                                <div class="post__item">
-                                    <div class="post__item-image">
-                                        <a href="#"><img src="/public/assets/img/blog/post-5.jpg" alt=""></a>
-                                    </div>
-                                    <div class="post__item-title">
-                                        <h6><a href="#">Financial Consulting for Small Businesses</a></h6>
-                                        <span><i class="far fa-calendar-alt"></i>Dec 23, 2022</span>
-                                    </div>
-                                </div>                           
+                                </div>                          
                             </div>
                         </div>
                         <div class="all__sidebar-contact">

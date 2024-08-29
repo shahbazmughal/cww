@@ -18,6 +18,9 @@
 			box-shadow: none;
 			border-color: var(--primary-color-1);
 		}
+        .contact__four-form-title {
+            max-width: 100%;
+        }
 	</style>
 	@include('includes.menu')
 	

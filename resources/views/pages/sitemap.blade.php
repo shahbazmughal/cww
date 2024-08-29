@@ -1,6 +1,11 @@
 @include('includes.header')
 
 	<link rel="stylesheet" href="public/assets/css/sitemap.css"> 
+	<style>
+		.footer__three-widget-solution ul li {
+			display: block;
+		}
+	</style>
 
 	@include('includes.menu')
 	

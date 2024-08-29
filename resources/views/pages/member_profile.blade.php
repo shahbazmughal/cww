@@ -3,6 +3,9 @@
 		.page__banner-content > span {
             font-size: 70px;
         }
+		.page__banner-content h1 {
+            font-size: 60px;
+		}
 		.team__details-content-contact-item-info h5 {
 			text-transform: capitalize;
 		}
