@@ -36,6 +36,9 @@
         .jquery-datepicker .datepicker-box .box-row .box-cell {
             cursor: pointer;
         }
+        .ck.ck-button, a.ck.ck-button {
+            position: static !important;
+        }
     </style>
 	@include('includes.menu')
 	
