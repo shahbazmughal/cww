@@ -63,7 +63,11 @@
                         if(obj.success == true) {
                             $("#msg-success").show();
                             $("#msg-danger").hide();
-                            $("#myform")[0].reset();
+                            $("#loginform")[0].reset();
+                            $(".theme-loader2").show();
+                            setTimeout(() => {
+                                window.location.href = "/";
+                            }, 1500);
                         } else {
                             $("#msg-success").hide();
                             $("#msg-danger").show();
