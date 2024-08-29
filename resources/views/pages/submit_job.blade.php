@@ -16,6 +16,9 @@
 			box-shadow: none;
 			border-color: var(--primary-color-1);
 		}
+        .ck.ck-button, a.ck.ck-button {
+            position: static !important;
+        }
 	</style>
 	@include('includes.menu')
 	
