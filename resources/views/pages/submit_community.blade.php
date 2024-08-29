@@ -21,6 +21,9 @@
         .contact__four-form-title {
             max-width: 100%;
         }
+        .ck.ck-button, a.ck.ck-button {
+            position: static !important;
+        }
 	</style>
 	@include('includes.menu')
 	
