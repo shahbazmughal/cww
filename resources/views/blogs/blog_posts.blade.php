@@ -48,7 +48,7 @@
 						<div class="blog__two-item-content">
 							<div class="blog__two-item-content-meta">
 								<ul>
-									<li><a href="#"><i class="far fa-user"></i>Cww-Admin</a></li>
+									<li><a href="#"><i class="far fa-user"></i>By-Admin</a></li>
 									<li><a href="#"><i class="far fa-comment-dots"></i>Comments (0)</a></li>
 								</ul>
 							</div>
@@ -70,7 +70,7 @@
 						<div class="blog__two-item-content">
 							<div class="blog__two-item-content-meta">
 								<ul>
-									<li><a href="#"><i class="far fa-user"></i>Cww-Admin</a></li>
+									<li><a href="#"><i class="far fa-user"></i>By-Admin</a></li>
 									<li><a href="#"><i class="far fa-comment-dots"></i>Comments (0)</a></li>
 								</ul>
 							</div>
