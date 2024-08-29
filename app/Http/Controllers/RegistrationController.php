@@ -36,19 +36,18 @@ class RegistrationController extends Controller
             'password' => Hash::make($password),
         ]);
 
-
         // Send password to the user's email
-        $sent_email = Mail::to($request->email)->send(new \App\Mail\RegistrationMail($password));
-        if($user){
-            return back()->with('success', 'Registration successful. Please check your email for your password.');
-        }
-        else {
-            echo json_encode(['success'=> false , 'message'=> 'Email already registered!']);
-        }
+        Mail::to($request->email)->send(new \App\Mail\RegistrationMail($password));
 
-        // Send password to the user's email
-        // Mail::to($request->email)->send(new \App\Mail\RegistrationMail($password));
-        // return back()->with('success', 'Registration successful. Please check your email for your password.');
+        return back()->with('success', 'Registration successful. Please check your email for your password.');
+        
+        // $sent_email = Mail::to($request->email)->send(new \App\Mail\RegistrationMail($password));
+        // if($user){
+        //     return back()->with('success', 'Registration successful. Please check your email for your password.');
+        // }
+        // else {
+        //     echo json_encode(['success'=> false , 'message'=> 'Email already registered!']);
+        // }
     }
     public function generateRandomString($length = 10) {
         $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';

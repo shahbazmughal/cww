@@ -25,7 +25,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
-                    <form action="#" method="post" id="register-form">
+                    <form action="/register" method="post" id="register-form">
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <div class="row">
                             <div class="col-md-12">
@@ -207,7 +207,7 @@
 	@include('includes.scripts')
     <script>
         $(document).ready(function() {
-            $('#register-form').on('submit', function(event) {
+            $('#register-form2').on('submit', function(event) {
                 event.preventDefault(); // Prevent the default form submission
                 $(".theme-loader2").show();
                 $(".alert").hide();
