@@ -80,7 +80,8 @@
                             <h2 class="mb-30">Contact CWW</h2>
                         </div>
                         <div class="contact__three-right-form">
-                            <form action="#">
+                            <form action="#" method="post" id="contactForm">
+                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                 <div class="row">
                                     <div class="col-md-6 mb-30">
                                         <div class="contact__two-right-form-item conbix-contact-item">
@@ -137,6 +138,16 @@
                                         </div>
                                     </div>
                                     <div class="col-md-12">
+                                        <div class="contact__two-right-form-item conbix-contact-item">
+											<div class="alert alert-success mb-30" id="msg-success">
+                                                <span class="alert-text">Message sent successfully!</span>
+                                            </div>
+                                            <div class="alert alert-danger mb-30" id="msg-danger">
+                                                <span class="alert-text">Something went wrong, please try again later.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
                                         <div class="contact__two-right-form-item">
                                             <button class="btn-one" type="submit">Submit Form <i class="far fa-chevron-double-right"></i></button>
                                         </div>
@@ -153,4 +164,38 @@
 	@include('includes.footer')
 	
 	@include('includes.scripts')
+    <script>
+        $(document).ready(function() {
+            $('#contactForm').on('submit', function(event) {
+                event.preventDefault(); // Prevent the default form submission
+                $(".theme-loader2").show();
+                $.ajax({
+                    url: '{{ route('sendEmail') }}', // URL to send the request to
+                    method: 'POST', // HTTP method
+                    data: $(this).serialize(), // Serialize the form data
+                    success: function(response) {
+                        // Handle a successful response
+                        var obj = JSON.parse(response);
+                        $(".theme-loader2").hide();
+                        if(obj.success == true) {
+                            $("#msg-success").show();
+                            $("#msg-danger").hide();
+                            $("#myform")[0].reset();
+                        } else {
+                            $("#msg-success").hide();
+                            $("#msg-danger").show();
+                        }
+                    },
+                    error: function(xhr) {
+                        // Handle errors
+                        $(".theme-loader2").hide();
+                        $("#msg-success").hide();
+                        $("#msg-danger").show();
+                        $("#msg-danger").text(xhr.responseText.message);
+                        // alert('An error occurred: ' + xhr.responseText);
+                    }
+                });
+            });
+        });
+    </script>
 	@include('includes.html')

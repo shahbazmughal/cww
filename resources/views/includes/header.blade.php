@@ -39,6 +39,13 @@
 			<div class="spinner-bounce three"></div>
 		</div>
 	</div>
+	<div class="theme-loader2">
+		<div class="spinner">
+			<div class="spinner-bounce one"></div>
+			<div class="spinner-bounce two"></div>
+			<div class="spinner-bounce three"></div>
+		</div>
+	</div>
 	<!-- Preloader End -->
 	<!-- Dark Light Start -->
 	<div class="switch__tab">

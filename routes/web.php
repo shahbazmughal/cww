@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ContactController;
+
 //use Session;
 /*
 |--------------------------------------------------------------------------
@@ -94,7 +96,9 @@ Route::get('/invite', function () {
 Route::post('/register', [RegistrationController::class, 'register'])->name('register');
 Route::post('/login', [AuthController::class, 'login']);
 Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
-Route::get('/login', [AuthController::class, 'login_page'])->name('login');;
+Route::get('/login', [AuthController::class, 'login_page'])->name('login');
+
+Route::post('/contactmail', [ContactController::class, 'sendEmail'])->name('sendEmail');
 // Route::get('/login', function () {
 //     // if (Session::has('user_email')){
 //     //     return redirect('/'); 
