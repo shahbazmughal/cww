@@ -87,6 +87,10 @@ Route::get('/press_releases/details', function () {
     return view('pages.press_releases_details');
 })->name('press_releases_details');
 
+Route::get('/invite', function () {
+    return view('pages.invite');
+})->name('invite');
+
 Route::post('/register', [RegistrationController::class, 'register'])->name('register');
 Route::post('/login', [AuthController::class, 'login']);
 Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
