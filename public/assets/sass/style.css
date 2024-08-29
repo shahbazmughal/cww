@@ -10680,7 +10680,8 @@ Contact Four CSS
 .contact__four-info:hover span {
   color: #b0b0bd;
 }
-.contact__four-info:hover .contact__four-info-icon img {
+.contact__four-info:hover .contact__four-info-icon img,
+.contact__four-info:hover .contact__four-info-icon i {
   animation: rotateY 0.6s;
 }
 .contact__four-info:hover .contact__four-info-icon::after {
