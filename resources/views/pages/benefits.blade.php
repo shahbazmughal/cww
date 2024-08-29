@@ -11,6 +11,15 @@
 		.mh-400 {
 			min-height: 400px !important;
 		}
+		.icon-font{
+			font-size: 30px;
+			color: white;
+			line-height: 2;
+		}
+		.fa-comment-alt-lines:before, .fa-message-lines:before {
+			content: "\f4a6";
+		}
+
 		@media (min-width: 1199px) {
 			.services__one-item {
 				min-height: 500px;
@@ -169,7 +178,7 @@
 				<div class="col-xl-4 col-lg-4 col-md-6 md-mb-30 wow fadeInUp" data-wow-delay=".8s">
 					<div class="contact__four-info">
 						<div class="contact__four-info-icon">
-							<img src="public/assets/img/icon/phone-call.png" alt="">
+							<i class="fal fa-icons icon-font"></i>
 						</div>
                         <h4>Social Media</h4>
                         <p>Likes, shares, and connections galore are what you can expect from our social media strategies. We amplify your professional presence across various social platforms. Our brand's commitment to enhancing your visibility and engagement in the digital realm is reflected in our social media services.</p>
@@ -178,7 +187,7 @@
 				<div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.2s">
 					<div class="contact__four-info">
 						<div class="contact__four-info-icon">
-							<img src="public/assets/img/icon/emails.png" alt="">
+							<i class="fal fa-podcast icon-font"></i>
 						</div>
                         <h4>Podcasts</h4>
                         <p>Turning your insights into a symphony is what we aim for in our podcasts. Joining the conversation on our podcasts allows you to be the maestro of your industry. Our brand recognizes the value of thought leadership and actively promotes your expertise through our podcasting platform.</p>
@@ -187,7 +196,7 @@
 				<div class="col-xl-4 col-lg-4 col-md-6 lg-mb-30 wow fadeInUp" data-wow-delay=".4s">
 					<div class="contact__four-info">
 						<div class="contact__four-info-icon">
-							<img src="public/assets/img/icon/locationss.png" alt="">
+							<img class="icon-font" src="public/assets/img/icon/services-22.png" alt="">
                         </div>
                         <h4>Webinars</h4>
 						<p class="mb-30">Staying ahead and staying informed is vital, and our webinars are your gateway to knowledge, trends, and expert connections. Our brand's commitment to continuous learning and professional growth is reflected in the quality and relevance of our webinar offerings.</p>
@@ -205,7 +214,7 @@
 				<div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.2s">
 					<div class="contact__four-info">
 						<div class="contact__four-info-icon">
-							<img src="public/assets/img/icon/emails.png" alt="">
+							<i class="fal fa-badge-check icon-font"></i>
 						</div>
                         <h4>Digital Badge</h4>
                         <p class="mb-30">In the digital age, going big is essential, and our digital billboards put your achievements on the grandest stage. We leverage our partnerships and cutting-edge marketing tools to showcase your accomplishments to a wide audience. Your success becomes a part of our brand's commitment to promoting excellence on a global scale.</p>
@@ -214,7 +223,7 @@
 				<div class="col-xl-4 col-lg-4 col-md-6 lg-mb-30 wow fadeInUp" data-wow-delay=".4s">
 					<div class="contact__four-info">
 						<div class="contact__four-info-icon">
-							<img src="public/assets/img/icon/locationss.png" alt="">
+							<i class="fal fa-video icon-font"></i>
                         </div>
                         <h4>Custom Video Production</h4>
 						<p>Telling your story in HD is our way of bringing your narrative to life with cinematic flair. Our custom video production services emphasize the visual storytelling of your accomplishments. Our brand recognizes the power of multimedia in today's communication landscape and is dedicated to helping you convey your message effectively through compelling videos.</p>
@@ -223,7 +232,7 @@
 				<div class="col-xl-4 col-lg-4 col-md-6 md-mb-30 wow fadeInUp" data-wow-delay=".8s">
 					<div class="contact__four-info">
 						<div class="contact__four-info-icon">
-							<img src="public/assets/img/icon/phone-call.png" alt="">
+						<i class="fal fa-message-lines icon-font"></i>
 						</div>
                         <h4>Concierge Connections</h4>
                         <p>At Continental Who's Who, we offer you the exclusive advantage of navigating the VIP lanes of networking through our Concierge Connections. Our commitment to excellence extends to personalized assistance in establishing meaningful professional relationships. We understand the value of making the right connections, and our Concierge service ensures that you have access to the individuals who matter most in your industry. This service exemplifies our dedication to providing our members with unparalleled opportunities to grow and prosper.</p>
@@ -232,7 +241,7 @@
 				<div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.2s">
 					<div class="contact__four-info">
 						<div class="contact__four-info-icon">
-							<img src="public/assets/img/icon/emails.png" alt="">
+						<i class="fal fa-clipboard icon-font"></i>
 						</div>
                         <h4>Billboard Placements</h4>
                         <p>In the digital age, going big is essential, and our digital billboards put your achievements on the grandest stage. We leverage our partnerships and cutting-edge marketing tools to showcase your accomplishments to a wide audience. Your success becomes a part of our brand's commitment to promoting excellence on a global scale.</p>
@@ -241,7 +250,7 @@
 				<div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.2s">
 					<div class="contact__four-info">
 						<div class="contact__four-info-icon">
-							<img src="public/assets/img/icon/emails.png" alt="">
+							<i class="fal fa-globe icon-font"></i>
 						</div>
                         <h4>Media (Public Relations and Advertising)</h4>
                         <p>Go from unheard to unforgettable. Our media services catapult your story into the limelight.</p>

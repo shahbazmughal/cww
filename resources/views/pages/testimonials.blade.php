@@ -57,7 +57,7 @@
                             <img src="public/assets/img/testimonials/marsen_jules.jpg" alt="">
                             <div class="testimonial__two-item-bottom-name">
                                 <h5>Marsen Jules</h5>
-                                <span>MD</span>
+                                <span>Manager Director</span>
                             </div>
                         </div>
                     </div>
