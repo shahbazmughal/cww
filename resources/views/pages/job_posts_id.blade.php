@@ -36,14 +36,14 @@
                             <ul>
                                 <li>
                                     <div class="news__details-left-meta-date">
-                                        <span class="text-three">21</span>
-                                        <span class="text-five">Oct</span>
+                                        <span class="text-three">24</span>
+                                        <span class="text-five">Dec</span>
                                     </div>                                    
                                 </li>
                                 <li><a href="#"><i class="far fa-user"></i>By-Admin</a></li>
                                 <li><a href="#"><i class="far fa-comment-dots"></i>Comments (0)</a></li>
                             </ul>
-                            <h3 class="mt-20">Trust is an essential element to any successful professional relationship.</h3>
+                            <h3 class="mt-20">HR Consultant</h3>
                         </div>
                         <p>Without trust, business relationships cannot move forward to eventually serve as mutually beneficial entities. In a time where corruption and mistrust in the business world is exceedingly /publicized, why is it important to continue to trust our clients, co-workers, and other members of the business community?</p>
                         <div class="dark__image">							
@@ -128,8 +128,8 @@
                                         <a href="#"><img src="/public/assets/img/blog/post-3.jpg" alt=""></a>
                                     </div>
                                     <div class="post__item-title">
-                                        <h6><a href="#">How to Become a Successful Consultant</a></h6>
-                                        <span><i class="far fa-calendar-alt"></i>Dec 31, 2022</span>
+                                        <h6><a href="#">HR Consultant</a></h6>
+                                        <span><i class="far fa-calendar-alt"></i>Dec 24</span>
                                     </div>
                                 </div>                       
                             </div>
