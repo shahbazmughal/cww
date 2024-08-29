@@ -18,6 +18,11 @@
         .contact__page-map {
             margin-top: -150px;
         }
+        .badge {
+            display: inline-block;
+            padding: 10px 16px;
+            font-size: 1em;
+        }
     </style>
 
     @include('includes.menu')
@@ -79,7 +84,7 @@
                 </div>
                 <div class="col-xl-7 col-lg-7 lg-mb-30">
                     <div class="contact__page-info mb-60">
-                        <h2 class="mb-30 lg-mb-30">Invite your friends to PSTIE</h2>
+                        <h2 class="mb-30 lg-mb-30">Invite your friends to <span class="badge bg-dark">PSTIE</span></h2>
                         <div class="contact__page-info-item">
                             <h4>We're eager to hear from you!</h4>
                         </div>
