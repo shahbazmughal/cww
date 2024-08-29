@@ -78,13 +78,13 @@
 						<p>The Pinnacle Member and Business Spotlight is a place of honor on the home page banner of the website. There is no other place on the website that will get you more recognition and exposure.</p>
 						<p>And this is the place we reserve for our most notable members. You can nominate someone whom you feel is a deserving candidate, or send a request for you or your business to be considered.</p>
 						<div class="team__details-content-contact">
-							<div class="team__details-content-contact-item mb-25">
+							<!-- <div class="team__details-content-contact-item mb-25">
 								<i class="far fa-envelope"></i>
 								<div class="team__details-content-contact-item-info">
 									<span>Contact Email</span>
 									<h5><a href="mailto:zulligm@gmail.com">zulligm@gmail.com</a></h5>
 								</div>
-							</div>
+							</div> -->
 							<div class="team__details-content-contact-item mb-25">
 								<i class="fal fa-book"></i>
 								<div class="team__details-content-contact-item-info">

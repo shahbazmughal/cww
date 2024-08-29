@@ -25,8 +25,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
-                    <form action="/register" method="post" id="register-form">
-                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                    <form action="#" method="post" id="register-form">
+                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <div class="row">
                             <div class="col-md-12">
                                 <h3 class="mb-3">Register Now</h3>
@@ -183,6 +183,12 @@
 									<input type="text" name="mobileno" placeholder="Mobile Phone (Not for Public)">
 								</div>
 							</div>
+                            <div class="alert alert-success" id="msg-success">
+                                You are successfully signup!
+                            </div>
+                            <div class="alert alert-danger" id="msg-danger">
+                                Email already registered!
+                            </div>
                             <div class="col-lg-12">
                                 <button class="btn-one mt-30" type="submit" id="register">Register <i class="far fa-chevron-double-right"></i></button>
                             </div>
@@ -199,4 +205,44 @@
 	@include('includes.footer')
 	
 	@include('includes.scripts')
+    <script>
+        $(document).ready(function() {
+            $('#register-form').on('submit', function(event) {
+                event.preventDefault(); // Prevent the default form submission
+                $(".theme-loader2").show();
+                $(".alert").hide();
+                $.ajax({
+                    url: '{{ route('register') }}', // URL to send the request to
+                    method: 'POST', // HTTP method
+                    data: $(this).serialize(), // Serialize the form data
+                    success: function(response) {
+                        $(".theme-loader2").hide();
+                        // Handle a successful response
+                        var obj = JSON.parse(response);
+                        console.log(obj);
+                        if(obj) {
+                            $("#msg-success").show();
+                            $("#msg-danger").hide();
+                            $("#loginform")[0].reset();
+                            $(".theme-loader2").show();
+                            setTimeout(() => {
+                                window.location.href = "/";
+                            }, 1500);
+                        } else {
+                            $("#msg-success").hide();
+                            $("#msg-danger").show();
+                        }
+                    },
+                    error: function(xhr) {
+                        // Handle errors
+                        $(".theme-loader2").hide();
+                        $("#msg-success").hide();
+                        $("#msg-danger").show();
+                        $("#msg-danger").text(xhr.responseText.message);
+                        // alert('An error occurred: ' + xhr.responseText);
+                    }
+                });
+            });
+        });
+    </script>
 	@include('includes.html')

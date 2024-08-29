@@ -30,13 +30,18 @@ class AuthController extends Controller
             $request->session()->put('user_email', $user->email);
 
             // Redirect to intended page or home
-            return redirect('/');
+            // return redirect('/');
+             echo json_encode(['success'=> true , 'message'=> 'Logged successfully!']);
+           // return redirect('/');
+        }
+        else {
+            echo json_encode(['success'=> false , 'message'=> 'Invalid username or password']);
         }
 
         // Authentication failed
-        return back()->withErrors([
-            'email' => 'The provided credentials do not match our records.',
-        ]);
+        // return back()->withErrors([
+        //     'email' => 'The provided credentials do not match our records.',
+        // ]);
     }
     public function login_page(){
          if (Session::has('user_email')){
