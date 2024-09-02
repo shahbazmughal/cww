@@ -116,7 +116,9 @@
                         <div class="contact__four-form-title">	
                             <h2>Submit an Event Form</h2>
                         </div>
-                        <form action="#">
+                        <div id="message"></div>
+                        <form id="eventForm">
+                            @csrf
                             <div class="row">
                                 <div class="col-md-6 mb-30">
                                     <div class="contact__two-right-form-item conbix-contact-item">
@@ -140,7 +142,8 @@
                                 </div>
                                 <div class="col-md-12 mb-30">
                                     <div class="contact__two-right-form-item conbix-contact-item">
-                                        <div id="editor"></div>
+                                        <!-- <div id="editor"></div> -->
+                                        <textarea name="details" id="editor" placeholder="Event Details"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
@@ -163,4 +166,48 @@
 	<script type="text/javascript" src="public/assets/js/ckeditor.js"></script>
 	<script type="text/javascript" src="public/assets/js/editor.js"></script>
     <script type="text/javascript" src="public/assets/js/jquery.datepicker2.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#eventForm').on('submit', function(e) {
+                e.preventDefault();
+
+                var formData = new FormData(this);
+
+                $.ajax({
+                    type: 'POST',
+                    url: '{{ route('events.store') }}',
+                    data: formData,
+                    contentType: false,
+                    processData: false,
+                    success: function(response) {
+                        $('#message').html('<div class="alert alert-success">' + response.success + '</div>');
+                        $('#eventForm')[0].reset(); // Reset the form after successful submission
+                    },
+                    error: function(response) {
+                        // Clear any previous messages
+                        $('#message').html('');
+
+                        // Check if there are any validation errors
+                        if (response.status === 422) {
+                            var errors = response.responseJSON.errors;
+                            var errorHtml = '<div class="alert alert-danger"><ul>';
+
+                            // Loop through each error and add it to the errorHtml
+                            $.each(errors, function(key, messages) {
+                                errorHtml += '<li>' + messages[0] + '</li>';
+                            });
+
+                            errorHtml += '</ul></div>';
+                            $('#message').html(errorHtml);
+                        } else {
+                            // Handle other errors (e.g., server errors)
+                            $('#message').html('<div class="alert alert-danger">An unexpected error occurred. Please try again.</div>');
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+
+
 	@include('includes.html')

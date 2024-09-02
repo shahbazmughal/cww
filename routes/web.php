@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\EventController;
 
 //use Session;
 /*
@@ -105,6 +106,9 @@ Route::post('/contactmail', [ContactController::class, 'sendEmail'])->name('send
 //     // }
 //     return view('pages.login');
 // })
+
+Route::post('/events/store', [EventController::class, 'store'])->name('events.store');
+Route::get('/events', [EventController::class, 'fetchEvents'])->name('events.fetch');
 
 
 Route::get('/member_search', function () {

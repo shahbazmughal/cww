@@ -104,42 +104,28 @@
 	@include('includes.scripts')
 
 	<script type="text/javascript" src="public/assets/js/jquery.simple-calendar.js"></script>
-	<script>
-		var $calendar;
-		$(document).ready(function () {
-			let container = $("#container").simpleCalendar({
-			fixedStartDay: 0, // begin weeks by sunday
-			disableEmptyDetails: true,
-			events: [
-				// generate new event after tomorrow for one hour
-				{
-					startDate: new Date(new Date().setHours(new Date().getHours() + 24)).toDateString(),
-					endDate: new Date(new Date().setHours(new Date().getHours() + 25)).toISOString(),
-					summary: 'Visit of the Eiffel Tower'
-				},
-				// generate new event for yesterday at noon
-				{
-					startDate: new Date(new Date().setHours(new Date().getHours() - new Date().getHours() - 12, 0)).toISOString(),
-					endDate: new Date(new Date().setHours(new Date().getHours() - new Date().getHours() - 11)).getTime(),
-					summary: 'Restaurant'
-				},
-				// generate new event for the last two days
-				{
-					startDate: new Date(new Date().setHours(new Date().getHours() - 48)).toISOString(),
-					endDate: new Date(new Date().setHours(new Date().getHours() - 24)).getTime(),
-					summary: 'Visit of the Louvre'
-				},
-				// generate new event for the last two days
-				{
-					startDate: new Date(new Date().setHours(new Date().getHours() + 240)).toISOString(),
-					endDate: new Date(new Date().setHours(new Date().getHours() + 272)).getTime(),
-					summary: 'Visit of the Louvre'
-				}
-			],
+<script>
+    $(document).ready(function () {
+        $.ajax({
+            url: '{{ route('events.fetch') }}',
+            method: 'GET',
+            success: function (response) {
+                $('#container').simpleCalendar({
+                    fixedStartDay: 0, // begin weeks by Sunday
+                    disableEmptyDetails: true,
+                    events: response.map(event => ({
+                        startDate: new Date(event.startDate),
+                        endDate: new Date(event.endDate),
+                        summary: event.summary
+                    })),
+                });
+            },
+            error: function (xhr, status, error) {
+                console.error('Failed to fetch events:', error);
+            }
+        });
+    });
+</script>
 
-			});
-			$calendar = container.data('plugin_simpleCalendar')
-		});
-	</script>
 
 	@include('includes.html')
