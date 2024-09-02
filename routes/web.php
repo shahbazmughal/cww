@@ -4,6 +4,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\EventController;
+
+
+
 
 //use Session;
 /*
@@ -150,5 +154,9 @@ Route::get('/terms-of-service', function () {
 Route::get('/sitemap', function () {
     return view('pages.sitemap');
 })->name('sitemap');
+
+
+Route::post('/events', [EventController::class, 'store'])->name('events.store');
+
 
 // Route::get('about', 'PagesController@about');
