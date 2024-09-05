@@ -167,7 +167,7 @@
 	<script type="text/javascript" src="public/assets/js/ckeditor.js"></script>
 	<script type="text/javascript" src="public/assets/js/editor.js"></script>
     <script type="text/javascript" src="public/assets/js/jquery.datepicker2.js"></script>
-    <script>
+    <!-- <script>
         $(document).ready(function () {
             $('#event-form').on('submit', function (e) {
                 e.preventDefault();
@@ -194,5 +194,40 @@
                 });
             });
         });
-    </script>
+    </script> -->
+    <script>
+    $(document).ready(function () {
+        // Initialize CKEditor
+        var editor = CKEDITOR.replace('editor');
+
+        $('#event-form').on('submit', function (e) {
+            e.preventDefault();
+            $.ajax({
+                url: '{{ route('events.store') }}',
+                type: 'POST',
+                data: new FormData(this),
+                contentType: false,
+                processData: false,
+                success: function (response) {
+                    $('#alert-container').html(`
+                        <div class="alert alert-success">${response.success}</div>
+                    `);
+
+                    // Clear the form fields
+                    $('#event-form')[0].reset();
+                    editor.setData(''); // Clear CKEditor content
+                },
+                error: function (xhr) {
+                    let errors = xhr.responseJSON.errors;
+                    let errorHtml = '<div class="alert alert-danger"><ul>';
+                    $.each(errors, function (key, value) {
+                        errorHtml += `<li>${value}</li>`;
+                    });
+                    errorHtml += '</ul></div>';
+                    $('#alert-container').html(errorHtml);
+                }
+            });
+        });
+    });
+</script>
 	@include('includes.html')
