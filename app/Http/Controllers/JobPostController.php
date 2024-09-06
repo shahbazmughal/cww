@@ -61,7 +61,7 @@ class JobPostController extends Controller
      */
     public function index()
     {
-        $jobPosts = JobPost::all(); // Fetch all job posts
+        $jobPosts = JobPost::paginate(6);
         return view('pages.job_posts', compact('jobPosts'));
     }
 }
