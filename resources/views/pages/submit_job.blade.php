@@ -106,8 +106,8 @@
 
 @include('includes.scripts')
 
-<script type="text/javascript" src="public/assets/js/ckeditor.js"></script>
-<script type="text/javascript" src="public/assets/js/editor.js"></script>
+<!-- <script type="text/javascript" src="public/assets/js/ckeditor.js"></script>
+<script type="text/javascript" src="public/assets/js/editor.js"></script> -->
 <script>
     $(document).ready(function() {
         $('#jobPostForm').on('submit', function(e) {
