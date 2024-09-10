@@ -5,13 +5,13 @@
             font-size: 60px;
         }
 		.ck-editor__editable[role="textbox"] {min-height: 200px;}
-		input#job_post_image {
+		input#image {
 			height: 3.5rem;
 			line-height: 2.6rem;
 			font-size: 15px;
 			color: var(--body-color);
 		}
-		input#job_post_image:focus {
+		input#image:focus {
 			color: var(--text-heading-color);
 			outline: none;
 			box-shadow: none;
@@ -116,8 +116,11 @@
                         <div class="contact__four-form-title">	
                             <h2>Submit an Event Form</h2>
                         </div>
-                        <form action="#">
+                        <div id="alert-container"></div>
+                        <form id="event-form" enctype="multipart/form-data">
+                            @csrf
                             <div class="row">
+                                <input type="hidden" name="user_id" value="1" />
                                 <div class="col-md-6 mb-30">
                                     <div class="contact__two-right-form-item conbix-contact-item">
                                         <input type="text" name="event_title" placeholder="Event title" required="required">
@@ -125,7 +128,8 @@
                                 </div>
 								<div class="col-md-6">
                                     <div class="contact__two-right-form-item conbix-contact-item">
-										<input class="form-control" type="file" name="job_post[image]" id="job_post_image">
+										<!-- <input class="form-control" type="file" name="job_post[image]" id="job_post_image"> -->
+                                        <input type="file" class="form-control" id="image" name="image">
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-30">
@@ -140,7 +144,7 @@
                                 </div>
                                 <div class="col-md-12 mb-30">
                                     <div class="contact__two-right-form-item conbix-contact-item">
-                                        <div id="editor"></div>
+                                        <textarea name="message" id="editor"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
@@ -163,4 +167,67 @@
 	<script type="text/javascript" src="public/assets/js/ckeditor.js"></script>
 	<script type="text/javascript" src="public/assets/js/editor.js"></script>
     <script type="text/javascript" src="public/assets/js/jquery.datepicker2.js"></script>
+    <!-- <script>
+        $(document).ready(function () {
+            $('#event-form').on('submit', function (e) {
+                e.preventDefault();
+                $.ajax({
+                    url: '{{ route('events.store') }}',
+                    type: 'POST',
+                    data: new FormData(this),
+                    contentType: false,
+                    processData: false,
+                    success: function (response) {
+                        $('#alert-container').html(`
+                            <div class="alert alert-success">${response.success}</div>
+                        `);
+                    },
+                    error: function (xhr) {
+                        let errors = xhr.responseJSON.errors;
+                        let errorHtml = '<div class="alert alert-danger"><ul>';
+                        $.each(errors, function (key, value) {
+                            errorHtml += `<li>${value}</li>`;
+                        });
+                        errorHtml += '</ul></div>';
+                        $('#alert-container').html(errorHtml);
+                    }
+                });
+            });
+        });
+    </script> -->
+    <script>
+    $(document).ready(function () {
+        // Initialize CKEditor
+        var editor = CKEDITOR.replace('editor');
+
+        $('#event-form').on('submit', function (e) {
+            e.preventDefault();
+            $.ajax({
+                url: '{{ route('events.store') }}',
+                type: 'POST',
+                data: new FormData(this),
+                contentType: false,
+                processData: false,
+                success: function (response) {
+                    $('#alert-container').html(`
+                        <div class="alert alert-success">${response.success}</div>
+                    `);
+
+                    // Clear the form fields
+                    $('#event-form')[0].reset();
+                    editor.setData(''); // Clear CKEditor content
+                },
+                error: function (xhr) {
+                    let errors = xhr.responseJSON.errors;
+                    let errorHtml = '<div class="alert alert-danger"><ul>';
+                    $.each(errors, function (key, value) {
+                        errorHtml += `<li>${value}</li>`;
+                    });
+                    errorHtml += '</ul></div>';
+                    $('#alert-container').html(errorHtml);
+                }
+            });
+        });
+    });
+</script>
 	@include('includes.html')

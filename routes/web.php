@@ -4,6 +4,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\JobPostController;
+
+
 
 //use Session;
 /*
@@ -106,6 +110,17 @@ Route::post('/contactmail', [ContactController::class, 'sendEmail'])->name('send
 //     return view('pages.login');
 // })
 
+Route::middleware('auth')->group(function () {
+    Route::post('/events', [EventController::class, 'store'])->name('events.store');
+    Route::get('/events', [EventController::class, 'fetch'])->name('events.fetch');
+});
+
+Route::get('/events/fetch', [EventController::class, 'fetchEvents'])->name('events.fetchEvents');
+Route::post('/events', [EventController::class, 'store'])->name('events.store');
+Route::put('/events/{id}', [EventController::class, 'update'])->name('events.update');
+Route::delete('/events/{id}', [EventController::class, 'destroy'])->name('events.destroy');
+
+
 
 Route::get('/member_search', function () {
     return view('pages.member_search');
@@ -150,5 +165,14 @@ Route::get('/terms-of-service', function () {
 Route::get('/sitemap', function () {
     return view('pages.sitemap');
 })->name('sitemap');
+
+
+
+
+Route::get('/job_posts', [JobPostController::class, 'index'])->name('job_posts.index');
+Route::get('/job_posts/create', [JobPostController::class, 'create'])->name('job_posts.create');
+Route::post('/job_posts', [JobPostController::class, 'store'])->name('job_posts.store');
+
+
 
 // Route::get('about', 'PagesController@about');

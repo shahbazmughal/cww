@@ -104,7 +104,7 @@
 	@include('includes.scripts')
 
 	<script type="text/javascript" src="public/assets/js/jquery.simple-calendar.js"></script>
-	<script>
+	<!-- <script>
 		var $calendar;
 		$(document).ready(function () {
 			let container = $("#container").simpleCalendar({
@@ -140,6 +140,39 @@
 			});
 			$calendar = container.data('plugin_simpleCalendar')
 		});
-	</script>
+	</script> -->
+
+	<script>
+    $(document).ready(function () {
+        $.ajax({
+            url: '{{ route('events.fetchEvents') }}', // Ensure this route is correct
+            type: 'GET',
+            success: function (response) {
+                // Log the response to check data
+                console.log('Fetched Events:', response);
+                
+                let events = response.map(event => {
+                    return {
+                        startDate: event.startDate,
+                        endDate: event.endDate,
+                        summary: event.summary,
+                        image: event.image ? event.image : null,
+                    };
+                });
+
+                $('#container').simpleCalendar({
+                    fixedStartDay: 0, // begin weeks by Sunday
+                    disableEmptyDetails: true,
+                    events: events
+                });
+            },
+            error: function () {
+                console.log('Error fetching events');
+            }
+        });
+    });
+</script>
+
+
 
 	@include('includes.html')
