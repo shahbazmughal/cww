@@ -44,6 +44,11 @@
     span.relative.inline-flex.items-center {
         margin: 5px;
     }
+    .blog__two-item-image img {
+        height: 320px;
+        object-fit: cover;
+        object-position: top;
+    }
 </style>
 @include('includes.menu')
 

@@ -45,7 +45,8 @@ class JobPostController extends Controller
 
         if ($request->hasFile('job_post_image')) {
             $imagePath = $request->file('job_post_image')->store('public/user/job_posts/images');
-            $jobPost->job_post_image = str_replace('public/', '', $imagePath); // Store path relative to 'storage/app/public'
+            $imagePath2 = $request->file('job_post_image')->store('storage/app/public/user/job_posts/images');
+            $jobPost->job_post_image = str_replace('public/', '', $imagePath2); // Store path relative to 'storage/app/public'
         }
 
         $jobPost->message = $request->message;
