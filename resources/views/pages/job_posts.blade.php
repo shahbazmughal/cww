@@ -83,7 +83,7 @@
                         <div class="blog__two-item page">
                             <div class="blog__two-item-image">
                                 @if($jobPost->job_post_image)
-                                <a href="/job_posts/id"><img src="public/{{ Storage::url($jobPost->job_post_image) }}" alt="Job Post Image" width="200"></a>
+                                <a href="/job_posts/id"><img src="{{ Storage::url($jobPost->job_post_image) }}" alt="Job Post Image" width="200"></a>
                                 @endif
                                 <div class="blog__two-item-image-date">
                                     <span class="text-three">19</span>
