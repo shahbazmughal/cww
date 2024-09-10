@@ -6,6 +6,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\JobPostController;
+use App\Http\Controllers\CommunityPostController;
 
 
 
@@ -142,14 +143,6 @@ Route::get('/submit_job', function () {
     return view('pages.submit_job');
 })->name('submit_job');
 
-Route::get('/community_posts', function () {
-    return view('pages.community_posts');
-})->name('community_posts');
-
-Route::get('/community_posts/id', function () {
-    return view('pages.community_posts_id');
-})->name('community_posts_id');
-
 Route::get('/submit_community', function () {
     return view('pages.submit_community');
 })->name('submit_community');
@@ -173,6 +166,13 @@ Route::get('/job_posts', [JobPostController::class, 'index'])->name('job_posts.i
 Route::get('/job_posts/create', [JobPostController::class, 'create'])->name('job_posts.create');
 Route::post('/job_posts', [JobPostController::class, 'store'])->name('job_posts.store');
 
+
+
+
+Route::get('/community_posts', [CommunityPostController::class, 'index'])->name('community_posts.index');
+Route::post('/community_posts', [CommunityPostController::class, 'store'])->name('community_posts.store');
+
+Route::get('register', [AuthController::class, 'showRegistrationForm'])->name('register');
 
 
 // Route::get('about', 'PagesController@about');
